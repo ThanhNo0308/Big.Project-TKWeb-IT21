@@ -1,7 +1,7 @@
 # Big.Project-TKWeb-IT21
 # Trang Web Mạng Xã Hội 
 
-![image](366063443_1696968707408610_4979525250667447752_n.png)
+![image](assets/366063443_1696968707408610_4979525250667447752_n.png)
 
 
 ## Giới thiệu
