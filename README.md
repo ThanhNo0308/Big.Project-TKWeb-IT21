@@ -1,7 +1,7 @@
 # Big.Project-TKWeb-IT21
 # Trang Web Mạng Xã Hội 
 
-![image](366063443_1696968707408610_4979525250667447752_n.png)
+![image](assets/img/366063443_1696968707408610_4979525250667447752_n.png)
 
 
 ## Giới thiệu
@@ -17,9 +17,9 @@ Trang Web Mạng Xã Hội là một ứng dụng web cho phép người dùng x
 ## Cài đặt và Chạy
 1. Clone repository:
   ```bash
-git clone https://github.com/thanhno0308/Big.Project-TKWeb-IT21.git
+git clone https://github.com/ThanhNo0308/Big.Project-TKWeb-IT21.git
 ```
-2.  Mở tệp `index.html` trong trình duyệt web để trải nghiệm trang web.
+2.  Mở tệp `Big-Project.html` trong trình duyệt web để trải nghiệm trang web.
 
 ## Tác giả
 
