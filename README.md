@@ -1,7 +1,7 @@
 # Project-Big-IT21
 # Trang Web Mạng Xã Hội 
 
-![image](https://github.com/khangvbeauty/Project-Big-IT21/assets/68845361/dc33ec2e-4bc6-4df2-9552-d45921b23e72)
+![image](366063443_1696968707408610_4979525250667447752_n.png))
 
 
 ## Giới thiệu
