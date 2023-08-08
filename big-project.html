@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media</title>
+  <link rel="stylesheet" href="assets/css/big-project.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.0.0-web/css/all.min.css">
+  <link rel="icon" href="assets/img/user.png">
+  <script src="big-project.js"></script>
+</head>
+<body>
+  <div id="go-top">
+    <a href="#"><i class="fa-solid fa-circle-up"></i></a>
+  </div>
+  <!-- Start Header -->
+  <div id="header">
+    <div class="subheader flex">
+      <div class="lefthd flex">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <div class="search flex">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" >
+        </div>
+      </div>
+      <div class="righthd">
+        <a href="#"><i style="color: #fff;" class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-regular fa-compass"></i></a>
+        <a href="#"><i class="fa-solid fa-store"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fa-solid fa-face-smile"></i></a>
+        <a href="#"><i class="fa-solid fa-bolt"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href="#" class="js-show-modal-pen"><i class="fa-solid fa-pencil" style="color: #001935;"></i></a> 
+        </div>
+          <!-- Start Modal-Pen -->
+          <div class="modal-pen js-modal-pen">
+            <div class="modal-pen-container js-modal-pen-container">
+              <div class="flex-col">
+                <i class="fa-solid fa-font" style="background: white;"></i>
+                <div>Text</div>
+              </div>
+              <div class="flex-col">
+                <i class="fa-solid fa-camera-retro" style="background: #ff4930;"></i>
+                <div>Photo</div>
+              </div>
+              <div class="flex-col">
+                <i class="fa-solid fa-quote-left" style="background: #ff8a00;"></i>
+                <div>Quote</div>
+              </div>
+              <div class="flex-col">
+                <i class="fa-solid fa-link" style="background: #00cf35;"></i>
+                <div>Link</div>
+              </div>
+              <div class="flex-col">
+                <i class="fa-solid fa-comment-sms" style="background: #00b8ff;"></i>
+                <div>Chat</div>
+              </div>
+              <div class="flex-col">
+                <i class="fa-solid fa-headset" style="background: #7c5cff;"></i>
+                <div>Audio</div>
+              </div>
+              <div class="flex-col">
+                <i class="fa-solid fa-video" style="background: #ff62ce;"></i>
+                <div>Video</div>
+              </div>
+            </div>
+          </div>    
+          <!-- End Modal-Pen -->
+        </div>
+        <div>
+          <!-- Start Modal -->
+          <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+              <img class="img" src="assets/img/user.png" alt="user"  width="67px">
+              <header class="modal-header"><b>0798693538</b></header>
+              <div class="modal-body">
+                <div class="flex">
+                  <input type="text" class="modal-input" placeholder="Title" style="width: 250px;">
+                  <div>
+                    <i class="fa-solid fa-images" style="color: #ff4930;"></i>
+                    <i class="fa-solid fa-quote-left" style="color: #ff8a00;padding-left: 7px;"></i>
+                    <i class="fa-solid fa-link" style="color: #00cf35;"></i>
+                    <i class="fa-solid fa-square-poll-horizontal" style="color: #00b8ff;"></i>
+                    <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
+                    <i class="fa-solid fa-video" style="color: #ff62ce;"></i>
+                    <i class="fa-solid fa-sliders" style="color: #606060;"></i>
+                  </div>
+                </div>
+                <textarea name="modal-text" class="modal-input" cols="30" rows="10" placeholder="Go ahead, put anything."></textarea>
+              </div>
+              <div class="modal-footer">
+                <div class="modal-close js-modal-close">Close</div>
+                <div>For Everyone<i class="fa-solid fa-chevron-down"></i></div>
+                <div>Post now<i class="fa-solid fa-chevron-down"></i></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal -->
+        </div>
+    </div>  
+  <!-- End Header -->
+  <div id="main-content">
+    <div id="left-sidebar">
+      <div id="ad">
+        <h1 style="margin-top: 10px;">Sponsored</h1>
+        <div class="change-ad"><img src="assets/img/qc4.jpg" alt="qc"></div>
+      </div>
+      <div id="mid-sidebar">
+        <h1>Radar</h1>
+      </div>
+      <div id="bot-sidebar">
+        <header class="flex">
+          <img  style="border-radius: 3px;" src="assets/img/SvIT.png" alt="SvIT" width="37px" height="37px">
+          <div class="name">IT-Support</div>
+          <div class="fl hidefl">Follow</div>
+          <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
+        </header>
+        <article>
+          <a title="Xem Bài Viết" class="next-page" href="assets/page/page-0.html" target="_parent">
+            <div class="change-img-sidebar"><img src="assets/img/cntt2.jpg" alt="cntt2" width="300px" height="350px"></div>
+          </a>
+          <div>Công Nghệ Thông Tin là gì?</div>
+          <div>
+            <a href="#">#cntt</a>
+            <a href="#">#it</a>
+            <a href="#">#hacker</a>
+            <a href="#">#ai</a><br>
+            <button>
+              <i class="fa-solid fa-fire"></i>
+              <div>Blaze</div>
+            </button>
+          </div>
+        </article>
+        <footer style="margin-bottom: 50px;">
+          <div><b>4,9K</b> notes</div>
+          <ul class="flex">
+            <li><i class="fa-regular fa-share-from-square"></i></li>
+            <li><i class="fa-regular fa-comment"></i></li>
+            <li><i class="fa-regular fa-heart"></i></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <div id="containers">
+      <!-- Start Navigation -->
+      <div id="nav">
+        <img class="img" src="assets/img/user.png" alt="user">
+        <ul class="flex">
+          <li>
+            <button class="text js-show-modal">
+              <i class="fa-solid fa-font" style="color: #000;"></i>
+              Text
+            </button>
+          </li>
+          <li>
+            <button class="photo js-show-modal">
+              <i class="fa-solid fa-camera-retro" style="color: #ff4930;"></i>
+              Photo
+            </button>
+          </li>
+          <li>
+            <button class="quote js-show-modal">
+              <i class="fa-solid fa-quote-left" style="color: #ff8a00;"></i>
+              Quote
+            </button>
+          </li>
+          <li>
+            <button class="link js-show-modal">
+              <i class="fa-solid fa-link" style="color: #00cf35;"></i>
+              Link
+            </button>
+          </li>
+          <li>
+            <button class="chat js-show-modal">
+              <i class="fa-solid fa-comment-sms" style="color: #00b8ff;"></i>
+              Chat
+            </button>
+          </li>
+          <li>
+            <button class="audio js-show-modal">
+              <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
+              Audio
+            </button>
+          </li>
+          <li>
+            <button class="video js-show-modal">
+              <i class="fa-solid fa-video" style="color: #ff62ce;"></i>
+              Video
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- End Navigation -->
+      <div class="tabs">
+          <div class="tab-item active">For you</div>
+          <div class="tab-item">Following</div>
+          <div class="tab-item">Your tags</div>
+          <div class="tab-item">Manage...</div>
+          <div class="line"></div>
+      </div>
+      <div id="contents">
+        <!-- Start Tab-pane-1 -->
+        <div class="tab-pane active">
+          <div id="tab-pane-1">
+            <div class="content">
+              <img class="img" src="assets/img/user1.jpg" alt="user1">
+              <header class="flex">
+                <div class="name">Developer</div>
+                <div class="fl hidefl">Follow</div>
+                <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
+              </header>
+              <article>
+                <a title="Xem Bài Viết" class="next-page" href="assets/page/page-1.html" target="_parent">
+                  <img class="img-content" src="assets/img/img1.jpg" alt="img1">
+                </a>
+                <div>8 bước trong quy trình thiết kế website chuyên nghiệp!!</div>
+                <div>
+                  <a class="tag" href="#">#amphibian</a>
+                  <a class="tag" href="#">#dev</a>
+                  <a class="tag" href="#">#hacker</a>
+                  <a class="tag" href="#">#website</a><br>
+                  <button>
+                    <i class="fa-solid fa-fire"></i>
+                    <div>Blaze</div>                  
+                  </button>
+                </div>
+              </article>
+              <footer>
+                <div><b>2,7K</b> notes</div>
+                <ul class="flex">
+                  <li><i class="fa-regular fa-share-from-square"></i></li>
+                  <li><i class="fa-regular fa-comment"></i></li>
+                  <li><i class="fa-solid fa-repeat"></i></li>
+                  <li><i class="fa-regular fa-heart"></i></li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <!-- End Tab-pane-1 -->
+        
+
+        <!-- Start Tab-pane-2 -->
+        <div class="tab-pane">
+          <div id="tab-pane-2">
+            <div class="content">
+              <img class="img" src="assets/img/user3.webp" alt="user3">
+              <header class="flex">
+                <div class="name">HelpfulTips</div>
+                <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
+              </header>
+              <article>
+                <a title="Xem Bài Viết" class="next-page" href="assets/page/page-3.html" target="_parent">
+                  <img class="img-content" src="assets/img/img3.jpg" alt="img3">
+                </a>
+                <div>Tips chọn Laptop "Hợp" với bạn</div>
+                <div>
+                  <a class="tag" href="#">#tips</a>
+                  <a class="tag" href="#">#tech</a>
+                  <a class="tag" href="#">#future</a>
+                  <a class="tag" href="#">#laptop</a><br>
+                  <button>
+                    <i class="fa-solid fa-fire"></i>
+                    <div>Blaze</div>
+                  </button>
+                </div>
+              </article>
+              <footer>
+                <div><b>1,5K</b> notes</div>
+                <ul class="flex">
+                  <li><i class="fa-regular fa-share-from-square"></i></li>
+                  <li><i class="fa-regular fa-comment"></i></li>
+                  <li><i class="fa-solid fa-repeat"></i></li>
+                  <li><i class="fa-regular fa-heart"></i></li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <!-- End Tab-pane2 -->
+
+
+        <!-- Start Tab-pane3 -->
+        <div class="tab-pane">
+          <div id="tab-pane-3">
+            <div class="content">
+              <img class="img" src="assets/img/user5.jpg" alt="user5">
+              <header class="flex">
+                <div class="name">VNexpress</div>
+                <div class="fl hidefl">Follow</div>
+                <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
+              </header>
+              <article>
+                <a title="Xem Bài Viết" class="next-page" href="assets/page/page-5.html" target="_parent">
+                  <img class="img-content" src="assets/img/img5.jpg" alt="img5">
+                </a>
+                <div>Những tỷ phú quyền lực nhất châu Á</div>
+                <div>
+                  <a class="tag" href="#">#asia</a>
+                  <a class="tag" href="#">#men</a>
+                  <a class="tag" href="#">#future</a>
+                  <a class="tag" href="#">#money</a><br>
+                  <button>
+                    <i class="fa-solid fa-fire"></i>
+                    <div>Blaze</div>
+                  </button>
+                </div>
+              </article>
+              <footer>
+                <div><b>3,9K</b> notes</div>
+                <ul class="flex">
+                  <li><i class="fa-regular fa-share-from-square"></i></li>
+                  <li><i class="fa-regular fa-comment"></i></li>
+                  <li><i class="fa-solid fa-repeat"></i></li>
+                  <li><i class="fa-regular fa-heart"></i></li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <!-- End Tab-pane3 -->
+
+
+        <!-- Start Tab-pane4 -->
+        <div class="tab-pane">
+          <div id="tab-pane-4">
+            <div class="content">
+              <img class="img" src="assets/img/user7.png" alt="user7">
+              <header class="flex">
+                <div class="name">Phim24h</div>
+                <div class="fl hidefl">Follow</div>
+                <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
+              </header>
+              <article>
+                <a title="Xem Bài Viết" class="next-page" href="assets/page/page-7.html" target="_parent">
+                  <img class="img-content" src="assets/img/img7.jpeg" alt="img7">
+                </a>
+                <div>Lý do ‘Nhiệm vụ bất khả thi’ vẫn gây sốt sau 27 năm</div>
+                <div>
+                  <a class="tag" href="#">#watch</a>
+                  <a class="tag" href="#">#film</a>
+                  <a class="tag" href="#">#hollywood</a>
+                  <a class="tag" href="#">#hot</a><br>
+                  <button>
+                    <i class="fa-solid fa-fire"></i>
+                    <div>Blaze</div>
+                  </button>
+                </div>
+              </article>
+              <footer>
+                <div><b>1,3K</b> notes</div>
+                <ul class="flex">
+                  <li><i class="fa-regular fa-share-from-square"></i></li>
+                  <li><i class="fa-regular fa-comment"></i></li>
+                  <li><i class="fa-solid fa-repeat"></i></li>
+                  <li><i class="fa-regular fa-heart"></i></li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+
+        </div>
+        <!-- End Tab-pane 4 -->
+      </div>
+
+    </div>
+    <!-- Start Sidebar -->
+    <div id="sidebar">
+      <div id="top-sidebar">
+        <h1 style="color: #fff;">Check out these blogs</h1>
+        <div class="accounts">
+          <!-- Account1 -->
+          <div class="account flex">
+            <img class="img-account" src="assets/img/hieupc.jpg" alt="hieupc">
+            <div class="infor">
+              <div>
+                <b>Hieu-pc</b>
+                <i style="color: #00b8ff;" class="fa-solid fa-circle-check"></i>
+              </div>
+              <div style="color: #99a3ae;">Gia Lai, Việt Nam</div>
+            </div>
+            <div class="acc-fl hidefl hidefl-acc">Follow</div>
+            <div class="acc-close"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </div>
+      </div>
+      <div id="friendss">
+        <h1>
+          Friends
+          <i style="margin-left: 150px;" class="fa-solid fa-phone-volume"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-ellipsis"></i>
+        </h1>
+        <div id="friends">
+          <div class="friend flex">
+            <img class="img-friend" src="assets/img/nguyencongphuong.png">
+            <div class="infor" style="padding-left: 10px;">
+                <b>Nguyễn Công Phượng</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Sidebar -->
+  </div>
+</body>
+</html>

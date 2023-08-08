@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+#containers {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+#container {
+    background-color: #001935;
+    width: 78%;
+    height: 783px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#container i {
+    color: white;
+    font-size: 25px;
+}
+
+#tool-left {
+    margin: 10px 0 0 25px;
+}
+
+#tool-left>i:last-child {
+    margin: 0 20px 0 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #1da1f2;
+}
+
+#container #images img {
+    width: 860px;
+    height: 100%;
+}
+
+#tool-right {
+    margin: 25px 30px 0 0;
+
+}
+
+#tool-right i {
+    margin-left: 25px;
+}
+
+#contents {
+    width: 22%;
+    background-color: white;
+}
+
+#contents header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+#contents header i {
+    font-size: 20px;
+    color: black;
+    margin: 10px 20px 10px 0;
+    padding: 15px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+#contents article {
+    margin: 0 10px 0 10px;
+}
+
+#contents article .header {
+    margin: 15px 0 0 0;
+}
+
+#contents article .header i:last-child {
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+#contents article .header i:last-child:hover {
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#contents article .header>img {
+    border-radius: 50%;
+}
+
+#contents article .content {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#contents article .footer {
+    padding: 10px 0 2px 0;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-around;
+}
+
+#contents article .footer i {
+    font-size: 21px;
+    padding-right: 7px;
+    margin-bottom: 10px;
+}
+
+#contents footer {
+    margin: 0 10px 0 10px;
+}
+
+#contents footer .write {
+    background: #f0f2f5;
+    width: 300px;
+    height: 80px;
+    border-radius: 20px;
+    margin: 15px 0 0 10px;
+}
+
+#contents footer .write input {
+    margin: 10px 0 0 10px;
+    font-size: 17px;
+    line-height: 2;
+    background-color: #f0f2f5;
+    border: none;
+}
+
+#contents footer .write .icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px 0 10px;
+}
+
+#contents footer .write .icons .icon i, .fa-play {
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#contents footer .write .icons .icon i:hover, .fa-play:hover {
+    background: #ccc;
+}
+
+
+
+
+

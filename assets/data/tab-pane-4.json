@@ -1,0 +1,34 @@
+[{
+    "user": "user8.jpg",
+    "name": "DayTravel",
+    "page": "page-8.html",
+    "image": "img8.jpg",
+    "content": "Khám phá vẻ đẹp xứ sở ‘gió như phang, nắng như rang’",
+    "tag1": "#travel",
+    "tag2": "#sea",
+    "tag3": "#sun",
+    "tag4": "#sightseeing",
+    "like": "2,2K"
+}, {
+    "user": "user2.jpg",
+    "name": "Tintuc24h",
+    "page": "page-2.html",
+    "image": "img2.jpg",
+    "content": "Xu hướng nghề nghiệp trong tương lai ở Việt Nam vào năm 2025",
+    "tag1": "#tintuc",
+    "tag2": "#work",
+    "tag3": "#future",
+    "tag4": "#modal",
+    "like": "1,5K"
+}, {
+    "user": "user5.jpg",
+    "name": "VNexpress",
+    "page": "page-5.html",
+    "image": "img5.jpg",
+    "content": "Những tỷ phú quyền lực nhất châu Á",
+    "tag1": "#asia",
+    "tag2": "#men",
+    "tag3": "#future",
+    "tag4": "#money",
+    "like": "3,9K"
+}]

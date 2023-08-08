@@ -1,0 +1,34 @@
+[{
+    "user": "user7.png",
+    "name": "Phim24h",
+    "page": "page-7.html",
+    "image": "img7.jpeg",
+    "content": "Lý do ‘Nhiệm vụ bất khả thi’ vẫn gây sốt sau 27 năm",
+    "tag1": "#watch",
+    "tag2": "#film",
+    "tag3": "#hollywood",
+    "tag4": "#hot",
+    "like": "1,3K"
+}, {
+    "user": "user3.webp",
+    "name": "HelpfulTips",
+    "page": "page-3.html",
+    "image": "img3.jpg",
+    "content": "Tips chọn Laptop 'Hợp' với bạn",
+    "tag1": "#tips",
+    "tag2": "#tech",
+    "tag3": "#future",
+    "tag4": "#laptop",
+    "like": "1,5K"
+}, {
+    "user": "user1.jpg",
+    "name": "Developer",
+    "page": "page-1.html",
+    "image": "img1.jpg",
+    "content": "8 bước trong quy trình thiết kế website chuyên nghiệp!!",
+    "tag1": "#amphibian",
+    "tag2": "#dev",
+    "tag3": "#hacker",
+    "tag4": "#website",
+    "like": "2,7K"
+}]
