@@ -1,4 +1,4 @@
-# Project-Big-IT21
+# Big.Project-TKWeb-IT21
 # Trang Web Mạng Xã Hội 
 
 ![image](https://github.com/khangvbeauty/Project-Big-IT21/assets/68845361/dc33ec2e-4bc6-4df2-9552-d45921b23e72)
