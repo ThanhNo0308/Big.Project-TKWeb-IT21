@@ -1,238 +1,178 @@
-@media (max-width: 999px) {
-    #header .subheader .righthd i {
+@media (max-width: 1340px) {
+    #main-content #left-sidebar {
         display: none;
-    }
-
-    #header .subheader .righthd .fa-user {
-        display: block;
-        margin-top: 20px;
-    }
-
-    .img {
-        left: 5px;
-        width: 55px;
-        height: 55px;
-        margin-top: 5px;
-    }
-
-    #containers #contents .content header .name {
-        margin-left: 70px;
     }
 
     #sidebar {
+        position: unset;
+        margin-left: 50px;
+    }
+
+    .fa-phone-volume {
+        margin-left: 110px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #header .subheader .lefthd .search {
+        width: 45px;
+    }
+
+    #header .subheader .lefthd input {
         display: none;
+    }
+    
+    #sidebar {
+        display: none;
+    }
+
+
+
+}
+
+@media (max-width: 1100px) and (min-width: 700px) {
+    .img-content {
+        width: 650px;
+        height: 415px;
+    }
+
+    .modal-pen .modal-pen-container i {
+        font-size: 42px;
+        margin: 0 7px;
+        padding: 24px;
+    }
+    
+    #containers #nav {
+        width: 650px;
+    }
+
+    #containers #nav ul li button {
+        font-size: 23px;
+    }
+
+    #containers .tabs {
+        max-width: 650px;
+    }
+
+    #containers .tabs .tab-item {
+        font-size: 25px;
+    }
+
+    #containers #contents .content {
+        width: 650px;
+        height: 680px;
+    }
+     
+}
+
+@media (max-width: 699px) {
+    .img {
+        left: 5px;
+        width: 60px;
+        height: 60px;
+        margin-top: 2px;
+    }
+
+    .img-content {
+        width: 500px;
+        height: 320px;
+    }
+
+    #header .subheader .righthd i {
+        display: none;
+    } 
+
+    .modal-header {
+        justify-content: center;
+    }
+
+    .modal-pen .modal-pen-container i {
+        font-size: 35px;
+        margin: 0 5px;
+        padding: 15px;
+    }
+
+    #header .subheader .righthd .fa-house,
+    #header .subheader .righthd .fa-user,
+    #header .subheader .righthd .fa-pencil {
+        display: inline-block;
+    }
+
+    #containers {
+        margin: 0;
     }
 
     #containers #nav {
         display: none;
     }
-}
-
-@media (max-width: 899px) {
-    #footer #left-footer {
-        margin-right: 0;
-        margin-left: 10px;
-    }
-
-    #footer #mid-footer {
-        margin-right: 8px;
-    }
-
-    #footer #right-footer input {
-        font-size: 14px;
-    }
-    
-    #footer #right-footer button {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 760px) {
-    #header .subheader .lefthd .search {
-        width: 43px;
-    }
-
-    #footer {
-        display: none;
-    }
-}
-
-@media (min-width: 1000px) and (max-width: 1322px) {
-    #go-top {
-        padding: 10px 20px;
-    }
-
-    #main-content {
-        padding-left: 65px;
-    }
-
-    #header .subheader .righthd i {
-        padding: 0 13px 0 15px;
-    }
-
-    .modal-pen .modal-pen-container i {
-        font-size: 50px;
-        margin-left: 20px;
-    }
-
-    #footer #left-footer {
-        margin-right: 60px;
-        margin-left: 10px;
-    }
-
-    #footer #mid-footer {
-        margin-right: 100px;
-    }
-
-    #footer #right-footer input {
-        font-size: 14px;
-    }
-    
-    #footer #right-footer button {
-        font-size: 14px;
-    }
-    
-}
-
-
-@media (min-width: 900px) and (max-width: 999px) {
-    #go-top {
-        padding: 10px 20px;
-    }
-
-    #header .subheader .righthd i {
-        padding: 0 5px 0 10px;
-    }
-
-    .modal-pen .modal-pen-container i {
-        font-size: 40px;
-        margin-left: 20px;
-    }
-
-
-    #footer #left-footer {
-        margin-right: 30px;
-        margin-left: 10px;
-    }
-
-    #footer #mid-footer {
-        margin-right: 65px;
-    }
-
-    #footer #right-footer input {
-        font-size: 14px;
-    }
-    
-    #footer #right-footer button {
-        font-size: 14px;
-    }
-
-}
-
-@media (min-width: 800px) and (max-width: 899px) {
-    #header .subheader .righthd i {
-        display: none;
-    }
-
-    #header .subheader .righthd .fa-user {
-        display: block;
-        margin-top: 20px;
-    }
-
-    #footer #left-footer {
-        margin-right: 0;
-        margin-left: 10px;
-    }
-
-    #footer #mid-footer {
-        margin-right: 8px;
-    }
-
-    #footer #right-footer input {
-        font-size: 14px;
-    }
-    
-    #footer #right-footer button {
-        font-size: 14px;
-    }
-}
-
-@media (min-width:560px) and (max-width: 799px) {
-
-    #go-top {
-        display: none;
-    }
-
-    #main-content {
-        margin: 90px auto;
-    }
-
-    #footer {
-        width: 100%;
-    }
-
-    #footer #mid-footer {
-        margin-right: 20px;
-    }
-    #footer #left-footer h1 {
-        font-size: 30px;
-    }
-
-    #footer #mid-footer h1 {
-        font-size: 30px;
-    }
-
-    #footer #right-footer h1 {
-        font-size: 30px;
-    }
-
-    #footer #right-footer div i {
-        font-size: 30px;
-    }
-
-    #footer #right-footer input {
-        font-size: 10px;
-    }
-
-    #footer #right-footer button {
-        font-size: 10px;
-    }
-
-}
-
-@media (max-width: 559px) {
-    #main-content {
-        justify-content: flex-start;
-    }
 
     #containers .tabs .tab-item {
-        padding: 16px 8px 11px 12px;
+        font-size: 19px;
+    }
+
+    #containers #contents .content header .name {
+        margin-left: 75px;
     }
 
     #containers #contents .content {
-        width: 414px;
+        width: 500px;
+        height: 562px;
+    }
+    
+    #containers #contents .content article button {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 470px) {
+    .flex-col {
+        margin-top: 8px;
     }
 
     .img-content {
-        width: 414px;
+        width: 340px;
+        height: 270px;
     }
 
-    #containers #contents .content article button {
-        margin-top: 10px;
+    .modal-container {
+        width: 365px;
     }
-}
 
-/* 
-@media (min-width: 1024px) {
+    .modal-pen-container {
+        flex-direction: column;
+    }
+
+    .modal-body .flex i {
+        font-size: 15px;
+    }
+
+    .modal-input {
+        height: 90px;
+    }
+
     
+
+    .modal-footer {
+        justify-content: end;
+    }
+
+    .modal-footer div {
+        margin: 0;
+    }
+    
+
+    #containers .tabs .tab-item {
+        padding: 16px 6px 11px 6px;
+        font-size: 17px;
+    }
+
+    #containers #contents .content {
+        width: 355px;
+        height: 530px;
+    }
+
+    #containers #contents .content footer ul li {
+        margin: 10px 10px;
+    }
 }
 
-
-@media (min-width: 767px) and (max-width: 1023px) {
-
-}
-
-
-@media (max-width: 767px) {
-
-} */

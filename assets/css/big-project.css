@@ -17,6 +17,10 @@
     padding-left: 8px;
 }
 
+.fa-phone-volume {
+    margin-left: 150px;
+}
+
 
 .flex {
     display: flex;
@@ -633,7 +637,17 @@ body {
 #sidebar #top-sidebar .accounts .account {
     padding: 10px 8px;
     position: relative;
+    /* animation: hide-account ease 1s; */
 }
+
+/* @keyframes hide-account {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+} */
 
 
 #sidebar #top-sidebar .accounts .account:hover {
