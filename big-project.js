@@ -42,7 +42,7 @@ function loadBlogs() {
 
               // START CLOSE ẨN ACCOUNT
           var closes = document.getElementsByClassName("acc-close");
-          var hideflacc = document.getElementsByClassName("hidefl-acc")
+          var hideflacc = document.getElementsByClassName("hidefl-acc");
 
           // Hàm ẩn phần tử khi bấm vào nút "Close"
           function hideAccountOnClick() {
@@ -268,6 +268,87 @@ function loadTab4() {
 
 
 
+// $(document).ready(() => {
+//   $(".righthd i").click(function() {
+//     $(".righthd > a > i").removeClass("active-header");
+//     $(this).addClass("active-header");
+
+//     let h = $(this).attr("href");
+//     $(".header-content > div").hide();
+//     $(h).show();
+//   })
+// })
+
+
+
+function DropdownStore() {
+  var dropdownStore = document.querySelector(".dropdown-store-content");
+  var store = document.querySelector(".fa-store")
+  if (dropdownStore.style.display === "block") {
+      dropdownStore.style.display = "none";
+      store.style.color = "#a6afb8";
+  } else {
+      dropdownStore.style.display = "block";
+      store.style.color = "white";
+  }
+}
+
+
+function DropdownMessage() {
+  var dropdownMessage = document.querySelector(".dropdown-message-content");
+  var message = document.querySelector(".fa-facebook-messenger")
+  if (dropdownMessage.style.display === "block") {
+      dropdownMessage.style.display = "none";
+      message.style.color = "#a6afb8";
+
+  } else {
+      dropdownMessage.style.display = "block";
+      message.style.color = "white";
+
+  }
+}
+
+
+function DropdownUser() {
+  var dropdownUser = document.querySelector(".dropdown-user-content");
+  var user = document.querySelector(".fa-user")
+  if (dropdownUser.style.display === "block") {
+      dropdownUser.style.display = "none";
+      user.style.color = "#a6afb8";
+  } else {
+      dropdownUser.style.display = "block";
+      user.style.color = "white";
+
+  }
+}
+
+function DropdownThunder() {
+  var dropdownThunder = document.querySelector(".dropdown-thunder-content");
+  var thunder = document.querySelector(".fa-bolt")
+
+  if (dropdownThunder.style.display === "block") {
+      dropdownThunder.style.display = "none";
+      thunder.style.color = "#a6afb8";
+
+  } else {
+      dropdownThunder.style.display = "block";
+      thunder.style.color = "white";
+  }
+}
+
+
+
+function DropdownElip() {
+  var dropdownElip = document.querySelector(".dropdown-elip-content");
+  if (dropdownElip.style.display === "block") {
+      dropdownElip.style.display = "none";
+  } else {
+      dropdownElip.style.display = "block";
+  }
+}
+
+
+
 window.onload = function() {
     loadTab1();
     loadTab2();
@@ -275,6 +356,7 @@ window.onload = function() {
     loadTab4();
     loadBlogs();
     loadFriends();
+
     
 
 
@@ -369,28 +451,7 @@ window.onload = function() {
       }
     })
 
-
-
-
-
-
-
-    // const headers = document.querySelectorAll('.righthd i');
-      
-    // for (var i = 0; i < headers.length; i++) {
-    //   var header = headers[i];
-    //   header.addEventListener('click', function() {
-    //     this.style.color = "white";
-    //     this.addEventListener('click', function() {
-    //       this.style.color = "#a6afb8";
-    //     })
-    //   })
-
-      
-      
-    // }
-             
-
-    
 }
     
+
+

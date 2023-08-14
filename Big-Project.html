@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.0.0-web/css/all.min.css">
   <link rel="icon" href="assets/img/lotus-icon.png">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="big-project.js"></script>
 </head>
 <body>
@@ -25,15 +26,213 @@
         </div>
       </div>
       <div class="righthd">
-        <a href="#"><i style="color: #fff;" class="fa-solid fa-house"></i></a>
-        <a href="#"><i class="fa-regular fa-compass"></i></a>
-        <a href="#"><i class="fa-solid fa-store"></i></a>
-        <a href="#"><i class="fa-solid fa-envelope"></i></a>
-        <a href="#"><i class="fa-solid fa-face-smile"></i></a>
-        <a href="#"><i class="fa-solid fa-bolt"></i></a>
-        <a href="#"><i class="fa-solid fa-user"></i></a>
-        <a href="#" class="js-show-modal-pen"><i class="fa-solid fa-pencil" style="color: #001935;"></i></a> 
+        <a><i href="#" style="color: #fff;" class="fa-solid fa-house active-header"></i></a>
+        <a>
+          <div class="dropdown-store">
+            <button onclick="DropdownStore()" class="dropbtn-store"><i class="fa-solid fa-store"></i></button>
+            <div class="dropdown-store-content">
+              <h3 style="background: #ccc;">Store</h3>
+              <div class="store-contents">
+                <div class="store-content">
+                  <img src="assets/img/store1.png">
+                  <div class="store-write">
+                    <div>Rainbow Crab Checkmark<br><span style="color: #a4a4a4;">Now in color.</span></div>
+                    <div class="store-flex">
+                      <div>Shop</div>
+                      <div><i class="fa-solid fa-gift"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="store-content">
+                  <img src="assets/img/store2.png">
+                  <div class="store-write">
+                    <div>Important Babylonian<br><span style="color: #a4a4a4;">Get coppery!</span></div>
+                    <div class="store-flex">
+                      <div>Shop</div>
+                      <div><i class="fa-solid fa-gift"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="store-content">
+                  <img src="assets/img/store3.png">
+                  <div class="store-write">
+                    <div>Goncharov Enthusiast<br><span style="color: #a4a4a4;">For the discerning collector.</span></div>
+                    <div class="store-flex">
+                      <div>Shop</div>
+                      <div><i class="fa-solid fa-gift"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="store-content">
+                  <img src="assets/img/store4.png">
+                  <div class="store-write">
+                    <div>Crab Checkmark<br><span style="color: #a4a4a4;">It's crab time.</span></div>
+                    <div class="store-flex">
+                      <div>Shop</div>
+                      <div><i class="fa-solid fa-gift"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="store-content">
+                  <img src="assets/img/store5.png">
+                  <div class="store-write">
+                    <div>Commissions Open Badge<br><span style="color: #a4a4a4;">Open for business!</span></div>
+                    <div class="store-flex">
+                      <div>Shop</div>
+                      <div><i class="fa-solid fa-gift"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="store-content">
+                  <img src="assets/img/store6.png">
+                  <div class="store-write">
+                    <div>Coppy Badge<br><span style="color: #a4a4a4;">Certifies a Coppy-protected.</span></div>
+                    <div class="store-flex">
+                      <div>Shop</div>
+                      <div><i class="fa-solid fa-gift"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="store-content">
+                  <img src="assets/img/store7.png">
+                  <div class="store-write">
+                    <div>Important Blue Internet<br><span style="color: #a4a4a4;">Important for the internet.</span></div>
+                    <div class="store-flex">
+                      <div>Shop</div>
+                      <div><i class="fa-solid fa-gift"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="store-content">
+                  <img src="assets/img/store8.png">
+                  <div class="store-write">
+                    <div>Horse Friend<br><span style="color: #a4a4a4;">Get busy scoopin.</span></div>
+                    <div class="store-flex">
+                      <div>Shop</div>
+                      <div><i class="fa-solid fa-gift"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="store-content">
+                  <img src="assets/img/store9.png">
+                  <div class="store-write">
+                    <div>Dashboard Crabs<br><span style="color: #a4a4a4;">Crabs! Crabs everywhere!</span></div>
+                    <div class="store-flex">
+                      <div>Shop</div>
+                      <div><i class="fa-solid fa-gift"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="store-content">
+                  <img src="assets/img/store10.png">
+                  <div class="store-write">
+                    <div>Ad-Free Browsing<br><span style="color: #a4a4a4;">Now ad-free!</span></div>
+                    <div class="store-flex">
+                      <div>Shop</div>
+                      <div><i class="fa-solid fa-gift"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+          </div>
+        </a>
+        <a>
+          <div class="dropdown-message">
+            <button onclick="DropdownMessage()" class="dropbtn-message"><i class="fa-brands fa-facebook-messenger"></i></button>
+            <div class="dropdown-message-content">
+              <header>
+                <div>0798693538</div>
+                <div>New Message</div>
+              </header>
+              <article>
+                <div><i class="fa-regular fa-comments"></i></div>
+                <div style="font-size: 22px;">Talk with Friends</div>
+                <div>
+                  <img src="assets/img/nguyencongphuong.png">
+                  <img src="assets/img/tranthanh.jpg">
+                  <img src="assets/img/diepbang.jpg">
+                  <img src="assets/img/phamnhatvuong.webp">
+                </div>
+              </article>
+            </div>
         </div>
+        </a>
+        <a>
+          <div class="dropdown-thunder">
+            <button onclick="DropdownThunder()" class="dropbtn-thunder"><i href="#" class="fa-solid fa-bolt"></i></button>
+            <div class="dropdown-thunder-content">
+              <header>0798693538</header>
+              <article>
+                <div>All</div>
+                <div>Mentions</div>
+                <div>Reblogs</div>
+                <div>Replies</div>
+              </article>
+              <footer>
+                <i href="#" class="fa-solid fa-bolt"></i>
+                <div>Check out this tab when you make a post to see Likes, Reblogs, and new followers.</div>
+              </footer>
+            </div>
+          </div>
+        </a>
+        <a>
+          <div class="dropdown-user">
+            <button onclick="DropdownUser()" class="dropbtn-user"><i href="#" class="fa-solid fa-user"></i></button>
+            <div class="dropdown-user-content">
+                <ul class="user-top">
+                  <li>Account<span>Log out</span></li>
+                  <li class="flex-row">
+                    <div>
+                      <i class="fa-solid fa-heart"></i><span>Likes</span>
+                    </div>
+                    <div>0</div>
+                  </li>
+                  <li class="flex-row">
+                    <div>
+                      <i class="fa-solid fa-user-plus"></i><span>Following</span>
+                    </div>
+                    <div>6</div>
+                  </li>
+                  <li><i class="fa-solid fa-gear"></i>Settings</li>
+                  <li><i class="fa-solid fa-earth-americas"></i>Domains</li>
+                  <li><i class="fa-solid fa-hand-sparkles"></i>Go Ad-Free</li>
+                  <li><i class="fa-solid fa-cart-shopping"></i>Payment & purchases</li>
+                  <li><i class="fa-solid fa-gift"></i>Gifts</li>
+                  <li><i class="fa-solid fa-palette"></i>Change palette</li>
+                </ul>
+                <ul class="user-middle">
+                  <li>Blogs<span>+ New</span></li>
+                  <div>
+                    <img src="assets/img/user.png" width="36px" style="border-radius: 3px; margin-right: 10px;">
+                    <div>
+                      <div>0798693538</div>
+                      <div style="color: #919191;">Untitled</div>
+                    </div>
+
+                  </div>
+                  <li>Posts</li>
+                  <li>Followers</li>
+                  <li>Activity</li>
+                  <li>Drafts</li>
+                  <li>Queue</li>
+                  <li>Blog settings</li>
+                  <li>Mass Post Editor</li>
+                </ul>
+                <div class="user-footer">
+                  <ul class="flex-row">
+                    <li>About</li>
+                    <li>Apps</li>
+                    <li>Legal</li>
+                    <li>Privacy</li>
+                    <li>Help</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </a>
+        <a class="js-show-modal-pen"><i class="fa-solid fa-pencil" style="color: #001935;"></i></a> 
+      </div>
           <!-- Start Modal-Pen -->
           <div class="modal-pen js-modal-pen">
             <div class="modal-pen-container js-modal-pen-container">
@@ -101,309 +300,328 @@
         </div>
     </div>  
   <!-- End Header -->
-  <div id="main-content">
-    <div id="left-sidebar">
-      <div id="ad">
-        <h1 style="margin-top: 10px;">Sponsored</h1>
-        <div class="change-ad"><img src="assets/img/lotus-icon.png" alt="qc"></div>
+  <div class="header-content">
+    <div id="main-content">
+      <div id="left-sidebar">
+        <div id="ad">
+          <h1 style="margin-top: 10px;">Sponsored</h1>
+          <div class="change-ad"><img src="assets/img/lotus-icon.png" alt="qc"></div>
+        </div>
+        <div id="mid-sidebar">
+          <h1>Radar</h1>
+        </div>
+        <div id="bot-sidebar">
+          <header class="flex">
+            <img  style="border-radius: 3px;" src="assets/img/SvIT.png" alt="SvIT" width="37px" height="37px">
+            <div class="name">IT-Support</div>
+            <div class="fl hidefl">Follow</div>
+            <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
+          </header>
+          <article>
+            <a title="Xem Bài Viết" class="next-page" href="assets/page/page-0.html" target="_parent">
+              <div class="change-img-sidebar"><img src="assets/img/beckham.webp" alt="cntt2" width="300px" height="350px"></div>
+            </a>
+            <div>Công Nghệ Thông Tin là gì?</div>
+            <div>
+              <a href="#">#cntt</a>
+              <a href="#">#it</a>
+              <a href="#">#hacker</a>
+              <a href="#">#ai</a><br>
+              <button>
+                <i class="fa-solid fa-fire"></i>
+                <div>Blaze</div>
+              </button>
+            </div>
+          </article>
+          <footer style="margin-bottom: 50px;">
+            <div><b>4,9K</b> notes</div>
+            <ul class="flex">
+              <li><i class="fa-regular fa-share-from-square"></i></li>
+              <li><i class="fa-regular fa-comment"></i></li>
+              <li><i class="fa-regular fa-heart"></i></li>
+            </ul>
+          </footer>
+        </div>
       </div>
-      <div id="mid-sidebar">
-        <h1>Radar</h1>
-      </div>
-      <div id="bot-sidebar">
-        <header class="flex">
-          <img  style="border-radius: 3px;" src="assets/img/SvIT.png" alt="SvIT" width="37px" height="37px">
-          <div class="name">IT-Support</div>
-          <div class="fl hidefl">Follow</div>
-          <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
-        </header>
-        <article>
-          <a title="Xem Bài Viết" class="next-page" href="assets/page/page-0.html" target="_parent">
-            <div class="change-img-sidebar"><img src="assets/img/beckham.webp" alt="cntt2" width="300px" height="350px"></div>
-          </a>
-          <div>Công Nghệ Thông Tin là gì?</div>
-          <div>
-            <a href="#">#cntt</a>
-            <a href="#">#it</a>
-            <a href="#">#hacker</a>
-            <a href="#">#ai</a><br>
-            <button>
-              <i class="fa-solid fa-fire"></i>
-              <div>Blaze</div>
-            </button>
-          </div>
-        </article>
-        <footer style="margin-bottom: 50px;">
-          <div><b>4,9K</b> notes</div>
+      <div id="containers">
+        <!-- Start Navigation -->
+        <div id="nav">
+          <img class="img" src="assets/img/user.png" alt="user">
           <ul class="flex">
-            <li><i class="fa-regular fa-share-from-square"></i></li>
-            <li><i class="fa-regular fa-comment"></i></li>
-            <li><i class="fa-regular fa-heart"></i></li>
+            <li>
+              <button class="text js-show-modal">
+                <i class="fa-solid fa-font" style="color: #000;"></i>
+                Text
+              </button>
+            </li>
+            <li>
+              <button class="photo js-show-modal">
+                <i class="fa-solid fa-camera-retro" style="color: #ff4930;"></i>
+                Photo
+              </button>
+            </li>
+            <li>
+              <button class="quote js-show-modal">
+                <i class="fa-solid fa-quote-left" style="color: #ff8a00;"></i>
+                Quote
+              </button>
+            </li>
+            <li>
+              <button class="link js-show-modal">
+                <i class="fa-solid fa-link" style="color: #00cf35;"></i>
+                Link
+              </button>
+            </li>
+            <li>
+              <button class="chat js-show-modal">
+                <i class="fa-solid fa-comment-sms" style="color: #00b8ff;"></i>
+                Chat
+              </button>
+            </li>
+            <li>
+              <button class="audio js-show-modal">
+                <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
+                Audio
+              </button>
+            </li>
+            <li>
+              <button class="video js-show-modal">
+                <i class="fa-solid fa-video" style="color: #ff62ce;"></i>
+                Video
+              </button>
+            </li>
           </ul>
-        </footer>
-      </div>
-    </div>
-    <div id="containers">
-      <!-- Start Navigation -->
-      <div id="nav">
-        <img class="img" src="assets/img/user.png" alt="user">
-        <ul class="flex">
-          <li>
-            <button class="text js-show-modal">
-              <i class="fa-solid fa-font" style="color: #000;"></i>
-              Text
-            </button>
-          </li>
-          <li>
-            <button class="photo js-show-modal">
-              <i class="fa-solid fa-camera-retro" style="color: #ff4930;"></i>
-              Photo
-            </button>
-          </li>
-          <li>
-            <button class="quote js-show-modal">
-              <i class="fa-solid fa-quote-left" style="color: #ff8a00;"></i>
-              Quote
-            </button>
-          </li>
-          <li>
-            <button class="link js-show-modal">
-              <i class="fa-solid fa-link" style="color: #00cf35;"></i>
-              Link
-            </button>
-          </li>
-          <li>
-            <button class="chat js-show-modal">
-              <i class="fa-solid fa-comment-sms" style="color: #00b8ff;"></i>
-              Chat
-            </button>
-          </li>
-          <li>
-            <button class="audio js-show-modal">
-              <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
-              Audio
-            </button>
-          </li>
-          <li>
-            <button class="video js-show-modal">
-              <i class="fa-solid fa-video" style="color: #ff62ce;"></i>
-              Video
-            </button>
-          </li>
-        </ul>
-      </div>
-      <!-- End Navigation -->
-      <div class="tabs">
-          <div class="tab-item active">For you</div>
-          <div class="tab-item">Following</div>
-          <div class="tab-item">Your tags</div>
-          <div class="tab-item">Manage...</div>
-          <div class="line"></div>
-      </div>
-      <div id="contents">
-        <!-- Start Tab-pane-1 -->
-        <div class="tab-pane active">
-          <div id="tab-pane-1">
-            <div class="content">
-              <img class="img" src="assets/img/user1.jpg" alt="user1">
-              <header class="flex">
-                <div class="name">Developer</div>
-                <div class="fl hidefl">Follow</div>
-                <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
-              </header>
-              <article>
-                <a title="Xem Bài Viết" class="next-page" href="assets/page/page-1.html" target="_parent">
-                  <img class="img-content" src="assets/img/img1.jpg" alt="img1">
-                </a>
-                <div>8 bước trong quy trình thiết kế website chuyên nghiệp!!</div>
-                <div>
-                  <a class="tag" href="#">#amphibian</a>
-                  <a class="tag" href="#">#dev</a>
-                  <a class="tag" href="#">#hacker</a>
-                  <a class="tag" href="#">#website</a><br>
-                  <button>
-                    <i class="fa-solid fa-fire"></i>
-                    <div>Blaze</div>                  
-                  </button>
-                </div>
-              </article>
-              <footer>
-                <div><b>2,7K</b> notes</div>
-                <ul class="flex">
-                  <li><i class="fa-regular fa-share-from-square"></i></li>
-                  <li><i class="fa-regular fa-comment"></i></li>
-                  <li><i class="fa-solid fa-repeat"></i></li>
-                  <li><i class="fa-regular fa-heart"></i></li>
-                </ul>
-              </footer>
-            </div>
-          </div>
         </div>
-        <!-- End Tab-pane-1 -->
-        
-
-        <!-- Start Tab-pane-2 -->
-        <div class="tab-pane">
-          <div id="tab-pane-2">
-            <div class="content">
-              <img class="img" src="assets/img/user3.webp" alt="user3">
-              <header class="flex">
-                <div class="name">HelpfulTips</div>
-                <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
-              </header>
-              <article>
-                <a title="Xem Bài Viết" class="next-page" href="assets/page/page-3.html" target="_parent">
-                  <img class="img-content" src="assets/img/img3.jpg" alt="img3">
-                </a>
-                <div>Tips chọn Laptop "Hợp" với bạn</div>
-                <div>
-                  <a class="tag" href="#">#tips</a>
-                  <a class="tag" href="#">#tech</a>
-                  <a class="tag" href="#">#future</a>
-                  <a class="tag" href="#">#laptop</a><br>
-                  <button>
-                    <i class="fa-solid fa-fire"></i>
-                    <div>Blaze</div>
-                  </button>
-                </div>
-              </article>
-              <footer>
-                <div><b>1,5K</b> notes</div>
-                <ul class="flex">
-                  <li><i class="fa-regular fa-share-from-square"></i></li>
-                  <li><i class="fa-regular fa-comment"></i></li>
-                  <li><i class="fa-solid fa-repeat"></i></li>
-                  <li><i class="fa-regular fa-heart"></i></li>
-                </ul>
-              </footer>
-            </div>
-          </div>
+        <!-- End Navigation -->
+        <div class="tabs">
+            <div class="tab-item active">For you</div>
+            <div class="tab-item">Following</div>
+            <div class="tab-item">Your tags</div>
+            <div class="tab-item">Manage...</div>
+            <div class="line"></div>
         </div>
-        <!-- End Tab-pane2 -->
-
-
-        <!-- Start Tab-pane3 -->
-        <div class="tab-pane">
-          <div id="tab-pane-3">
-            <div class="content">
-              <img class="img" src="assets/img/user5.jpg" alt="user5">
-              <header class="flex">
-                <div class="name">VNexpress</div>
-                <div class="fl hidefl">Follow</div>
-                <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
-              </header>
-              <article>
-                <a title="Xem Bài Viết" class="next-page" href="assets/page/page-5.html" target="_parent">
-                  <img class="img-content" src="assets/img/img5.jpg" alt="img5">
-                </a>
-                <div>Những tỷ phú quyền lực nhất châu Á</div>
-                <div>
-                  <a class="tag" href="#">#asia</a>
-                  <a class="tag" href="#">#men</a>
-                  <a class="tag" href="#">#future</a>
-                  <a class="tag" href="#">#money</a><br>
-                  <button>
-                    <i class="fa-solid fa-fire"></i>
-                    <div>Blaze</div>
-                  </button>
-                </div>
-              </article>
-              <footer>
-                <div><b>3,9K</b> notes</div>
-                <ul class="flex">
-                  <li><i class="fa-regular fa-share-from-square"></i></li>
-                  <li><i class="fa-regular fa-comment"></i></li>
-                  <li><i class="fa-solid fa-repeat"></i></li>
-                  <li><i class="fa-regular fa-heart"></i></li>
-                </ul>
-              </footer>
-            </div>
-          </div>
-        </div>
-        <!-- End Tab-pane3 -->
-
-
-        <!-- Start Tab-pane4 -->
-        <div class="tab-pane">
-          <div id="tab-pane-4">
-            <div class="content">
-              <img class="img" src="assets/img/user7.png" alt="user7">
-              <header class="flex">
-                <div class="name">Phim24h</div>
-                <div class="fl hidefl">Follow</div>
-                <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
-              </header>
-              <article>
-                <a title="Xem Bài Viết" class="next-page" href="assets/page/page-7.html" target="_parent">
-                  <img class="img-content" src="assets/img/img7.jpeg" alt="img7">
-                </a>
-                <div>Lý do ‘Nhiệm vụ bất khả thi’ vẫn gây sốt sau 27 năm</div>
-                <div>
-                  <a class="tag" href="#">#watch</a>
-                  <a class="tag" href="#">#film</a>
-                  <a class="tag" href="#">#hollywood</a>
-                  <a class="tag" href="#">#hot</a><br>
-                  <button>
-                    <i class="fa-solid fa-fire"></i>
-                    <div>Blaze</div>
-                  </button>
-                </div>
-              </article>
-              <footer>
-                <div><b>1,3K</b> notes</div>
-                <ul class="flex">
-                  <li><i class="fa-regular fa-share-from-square"></i></li>
-                  <li><i class="fa-regular fa-comment"></i></li>
-                  <li><i class="fa-solid fa-repeat"></i></li>
-                  <li><i class="fa-regular fa-heart"></i></li>
-                </ul>
-              </footer>
-            </div>
-          </div>
-
-        </div>
-        <!-- End Tab-pane 4 -->
-      </div>
-
-    </div>
-    <!-- Start Sidebar -->
-    <div id="sidebar">
-      <div id="top-sidebar">
-        <h1 style="color: #fff;">Check out these blogs</h1>
-        <div class="accounts">
-          <!-- Account1 -->
-          <div class="account flex">
-            <img class="img-account" src="assets/img/hieupc.jpg" alt="hieupc">
-            <div class="infor">
-              <div>
-                <b>Hieu-pc</b>
-                <i style="color: #00b8ff;" class="fa-solid fa-circle-check"></i>
+        <div id="contents">
+          <!-- Start Tab-pane-1 -->
+          <div class="tab-pane active">
+            <div id="tab-pane-1">
+              <div class="content">
+                <img class="img" src="assets/img/user1.jpg" alt="user1">
+                <header class="flex">
+                  <div class="name">Developer</div>
+                  <div class="fl hidefl">Follow</div>
+                  <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
+                </header>
+                <article>
+                  <a title="Xem Bài Viết" class="next-page" href="assets/page/page-1.html" target="_parent">
+                    <img class="img-content" src="assets/img/img1.jpg" alt="img1">
+                  </a>
+                  <div>8 bước trong quy trình thiết kế website chuyên nghiệp!!</div>
+                  <div>
+                    <a class="tag" href="#">#amphibian</a>
+                    <a class="tag" href="#">#dev</a>
+                    <a class="tag" href="#">#hacker</a>
+                    <a class="tag" href="#">#website</a><br>
+                    <button>
+                      <i class="fa-solid fa-fire"></i>
+                      <div>Blaze</div>                  
+                    </button>
+                  </div>
+                </article>
+                <footer>
+                  <div><b>2,7K</b> notes</div>
+                  <ul class="flex">
+                    <li><i class="fa-regular fa-share-from-square"></i></li>
+                    <li><i class="fa-regular fa-comment"></i></li>
+                    <li><i class="fa-solid fa-repeat"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                  </ul>
+                </footer>
               </div>
-              <div style="color: #99a3ae;">Gia Lai, Việt Nam</div>
             </div>
-            <div class="acc-fl hidefl hidefl-acc">Follow</div>
-            <div class="acc-close"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+          <!-- End Tab-pane-1 -->
+          
+
+          <!-- Start Tab-pane-2 -->
+          <div class="tab-pane">
+            <div id="tab-pane-2">
+              <div class="content">
+                <img class="img" src="assets/img/user3.webp" alt="user3">
+                <header class="flex">
+                  <div class="name">HelpfulTips</div>
+                  <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
+                </header>
+                <article>
+                  <a title="Xem Bài Viết" class="next-page" href="assets/page/page-3.html" target="_parent">
+                    <img class="img-content" src="assets/img/img3.jpg" alt="img3">
+                  </a>
+                  <div>Tips chọn Laptop "Hợp" với bạn</div>
+                  <div>
+                    <a class="tag" href="#">#tips</a>
+                    <a class="tag" href="#">#tech</a>
+                    <a class="tag" href="#">#future</a>
+                    <a class="tag" href="#">#laptop</a><br>
+                    <button>
+                      <i class="fa-solid fa-fire"></i>
+                      <div>Blaze</div>
+                    </button>
+                  </div>
+                </article>
+                <footer>
+                  <div><b>1,5K</b> notes</div>
+                  <ul class="flex">
+                    <li><i class="fa-regular fa-share-from-square"></i></li>
+                    <li><i class="fa-regular fa-comment"></i></li>
+                    <li><i class="fa-solid fa-repeat"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <!-- End Tab-pane2 -->
+
+
+          <!-- Start Tab-pane3 -->
+          <div class="tab-pane">
+            <div id="tab-pane-3">
+              <div class="content">
+                <img class="img" src="assets/img/user5.jpg" alt="user5">
+                <header class="flex">
+                  <div class="name">VNexpress</div>
+                  <div class="fl hidefl">Follow</div>
+                  <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
+                </header>
+                <article>
+                  <a title="Xem Bài Viết" class="next-page" href="assets/page/page-5.html" target="_parent">
+                    <img class="img-content" src="assets/img/img5.jpg" alt="img5">
+                  </a>
+                  <div>Những tỷ phú quyền lực nhất châu Á</div>
+                  <div>
+                    <a class="tag" href="#">#asia</a>
+                    <a class="tag" href="#">#men</a>
+                    <a class="tag" href="#">#future</a>
+                    <a class="tag" href="#">#money</a><br>
+                    <button>
+                      <i class="fa-solid fa-fire"></i>
+                      <div>Blaze</div>
+                    </button>
+                  </div>
+                </article>
+                <footer>
+                  <div><b>3,9K</b> notes</div>
+                  <ul class="flex">
+                    <li><i class="fa-regular fa-share-from-square"></i></li>
+                    <li><i class="fa-regular fa-comment"></i></li>
+                    <li><i class="fa-solid fa-repeat"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <!-- End Tab-pane3 -->
+
+
+          <!-- Start Tab-pane4 -->
+          <div class="tab-pane">
+            <div id="tab-pane-4">
+              <div class="content">
+                <img class="img" src="assets/img/user7.png" alt="user7">
+                <header class="flex">
+                  <div class="name">Phim24h</div>
+                  <div class="fl hidefl">Follow</div>
+                  <div class="elip"><i class="fa-solid fa-ellipsis"></i></div>
+                </header>
+                <article>
+                  <a title="Xem Bài Viết" class="next-page" href="assets/page/page-7.html" target="_parent">
+                    <img class="img-content" src="assets/img/img7.jpeg" alt="img7">
+                  </a>
+                  <div>Lý do ‘Nhiệm vụ bất khả thi’ vẫn gây sốt sau 27 năm</div>
+                  <div>
+                    <a class="tag" href="#">#watch</a>
+                    <a class="tag" href="#">#film</a>
+                    <a class="tag" href="#">#hollywood</a>
+                    <a class="tag" href="#">#hot</a><br>
+                    <button>
+                      <i class="fa-solid fa-fire"></i>
+                      <div>Blaze</div>
+                    </button>
+                  </div>
+                </article>
+                <footer>
+                  <div><b>1,3K</b> notes</div>
+                  <ul class="flex">
+                    <li><i class="fa-regular fa-share-from-square"></i></li>
+                    <li><i class="fa-regular fa-comment"></i></li>
+                    <li><i class="fa-solid fa-repeat"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Tab-pane 4 -->
+        </div>
+
+      </div>
+      <!-- Start Sidebar -->
+      <div id="sidebar">
+        <div id="top-sidebar">
+          <h1 style="color: #fff;">Check out these blogs</h1>
+          <div class="accounts">
+            <!-- Account1 -->
+            <div class="account flex">
+              <img class="img-account" src="assets/img/hieupc.jpg" alt="hieupc">
+              <div class="infor">
+                <div>
+                  <b>Hieu-pc</b>
+                  <i style="color: #00b8ff;" class="fa-solid fa-circle-check"></i>
+                </div>
+                <div style="color: #99a3ae;">Gia Lai, Việt Nam</div>
+              </div>
+              <div class="acc-fl hidefl hidefl-acc">Follow</div>
+              <div class="acc-close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+          </div>
+        </div>
+        <div id="friendss">
+          <h1>
+            Friends
+            <i class="fa-solid fa-phone-volume"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-ellipsis"></i>
+          </h1>
+          <div id="friends">
+            <div class="friend flex">
+              <img class="img-friend" src="assets/img/nguyencongphuong.png">
+              <div class="infor" style="padding-left: 10px;">
+                  <b>Nguyễn Công Phượng</b>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="friendss">
-        <h1>
-          Friends
-          <i class="fa-solid fa-phone-volume"></i>
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-ellipsis"></i>
-        </h1>
-        <div id="friends">
-          <div class="friend flex">
-            <img class="img-friend" src="assets/img/nguyencongphuong.png">
-            <div class="infor" style="padding-left: 10px;">
-                <b>Nguyễn Công Phượng</b>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- End Sidebar -->
     </div>
-    <!-- End Sidebar -->
+    <div id="radar">
+      
+    </div>
+    <div id="game">
+      
+    </div>
+    <div id="mail">
+
+    </div>
+    <div id="smile">
+
+    </div>
+    <div id="thunder">
+
+    </div>
+  
   </div>
+
 </body>
 </html>
