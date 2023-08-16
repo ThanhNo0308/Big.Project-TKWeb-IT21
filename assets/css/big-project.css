@@ -775,6 +775,10 @@ body {
     font-size: 16px;
 }
 
+.elip .elip-modal > div:nth-child(2) {
+    border-bottom: 1px solid #ccc;
+}
+
 .elip > .elip-modal > div:hover {
     background: #e5e7ea;
     border-radius: 3px;
