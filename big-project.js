@@ -88,17 +88,11 @@ function loadBlogs() {
 
 
 
-$(document).ready(() => {
-  $(".fa-heart-pulse").click(function() {
-    $(this).toggleClass('heart');
-  })
-})
-
-
 
 function DropdownStore() {
   var dropdownStore = document.querySelector(".dropdown-store-content");
   var store = document.querySelector(".fa-store")
+
   if (dropdownStore.style.display === "block") {
       dropdownStore.style.display = "none";
       store.style.color = "#a6afb8";
@@ -112,6 +106,7 @@ function DropdownStore() {
 function DropdownMessage() {
   var dropdownMessage = document.querySelector(".dropdown-message-content");
   var message = document.querySelector(".fa-facebook-messenger")
+
   if (dropdownMessage.style.display === "block") {
       dropdownMessage.style.display = "none";
       message.style.color = "#a6afb8";
@@ -127,6 +122,7 @@ function DropdownMessage() {
 function DropdownUser() {
   var dropdownUser = document.querySelector(".dropdown-user-content");
   var user = document.querySelector(".fa-user")
+
   if (dropdownUser.style.display === "block") {
       dropdownUser.style.display = "none";
       user.style.color = "#a6afb8";
@@ -165,7 +161,6 @@ function DropdownElip() {
 
 
 window.onload = function() {
-   
     loadBlogs();
     loadFriends();
 
@@ -265,5 +260,12 @@ window.onload = function() {
 
 }
     
+
+
+$(document).ready(() => {
+  $(".fa-heart-pulse").click(function() {
+    $(this).toggleClass('heart');
+  })
+})
 
 

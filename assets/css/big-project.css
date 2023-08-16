@@ -5,24 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }   
 
-.heart {
-    color:red;
-}
-
-
-.fa-camera-retro {
-    padding-left: 4px;
-}
-
-.fa-quote-left:before {
-    padding-left: 8px;
-}
-
-.fa-phone-volume {
-    margin-left: 150px;
-}
-
-
 .flex {
     display: flex;
     align-items: center;
@@ -32,48 +14,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
- .elip {
-    position: absolute;
-    right: 10px;
-    font-size: 20px;
-    padding: 5px 8px;
-}
-
-.elip:hover {
-    background: #a1a1a1;
-    border-radius: 50%;
-} 
-
-.img {
-    width: 64px;
-    height: 64px;
-    position: absolute;
-    top: 0;
-    left: -85px;
-    border-radius: 3px;
-}
-
-.img-content {
-    width: 580px;
-    height: 370px;
-}
-
-.img-account {
-    width: 40px;
-    height: 40px;
-}
-
-.img-friend {
-    width: 50px;
-    height: 45px;
-    border-radius: 3px;
-}
-
-.next-page {
-    text-decoration: none;
-    color: black;
 }
 
 body {
@@ -92,7 +32,7 @@ body {
     color: #00b8ff;
     
 }
-
+/* Header */
 #header {
     position: fixed;
     width: 100%;
@@ -187,13 +127,10 @@ body {
 
 
 /* Dropdown-Store */
-
-
 .dropdown-store {
     position: relative;
     display: inline-block;
 }
-
 
 .dropdown-store-content {
     display: none;
@@ -255,15 +192,6 @@ body {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
 /* Dropdown-Message */
 .dropdown-message {
     position: relative;
@@ -319,12 +247,6 @@ body {
     cursor: pointer;
 }
 
-
-
-
-
-
-
 /* Dropdown-thunder */
 .dropdown-thunder {
     position: relative;
@@ -373,9 +295,6 @@ body {
     height: 98px;
     border-radius: 3px;
 }
-
-
-
 
 /* Dropdown-user */
 .flex-row {
@@ -491,16 +410,15 @@ body {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
 /* Start Modal-Pen */
+.fa-camera-retro {
+    padding-left: 4px;
+}
+
+.fa-quote-left:before {
+    padding-left: 8px;
+}
+
 .modal-pen {
     position: fixed;
     top: 0;
@@ -675,16 +593,7 @@ body {
     padding-left: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* Main-Content */
 #main-content {
     box-sizing: border-box;
     justify-content: center;
@@ -807,6 +716,8 @@ body {
     color: #00b8ff !important;
 }
 
+/* Contents */
+
 #containers #contents .tab-pane  {
     display: none;
 }
@@ -815,18 +726,36 @@ body {
     display: block;
 }
 
+.img {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    left: -85px;
+    border-radius: 3px;
+}
 
 
+.img-content {
+    width: 580px;
+    height: 370px;
+}
 
+.heart {
+    color:red;
+}
 
+.elip {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    padding: 5px 8px;
+}
 
-
-
-
-
-
-
-
+.elip:hover {
+    background: #a1a1a1;
+    border-radius: 50%;
+} 
 
 #containers #contents .content {
     width: 580px;
@@ -865,12 +794,6 @@ body {
     text-decoration: underline;
 }
 
-
-
-
-
-
-
 #containers #contents .content article div:nth-child(2) {
     margin: 15px 10px;
 }
@@ -878,8 +801,6 @@ body {
 #containers #contents .content article div:nth-child(3) {
     margin: 5px 10px;
 }
-
-
 
 .tag {
     color: #585858 !important;
@@ -890,8 +811,6 @@ body {
 .tag:hover {
     text-decoration: underline;
 }
-
-
 
 #containers #contents .content article button {
     border: none;
@@ -931,9 +850,7 @@ body {
 
 
 
-
 /* START Sidebar */
-
 #sidebar {
     width: 380px;
     height: 100%;
@@ -969,6 +886,11 @@ body {
 
 #sidebar #top-sidebar .accounts {
     margin-top: 10px;
+}
+
+.img-account {
+    width: 40px;
+    height: 40px;
 }
 
 #sidebar #top-sidebar .accounts .account {
@@ -1029,6 +951,11 @@ body {
     height: 562px;
     background-color: #fff;
     border-radius: 3px;
+}
+
+.next-page {
+    text-decoration: none;
+    color: black;
 }
 
 #bot-sidebar header {
@@ -1161,6 +1088,10 @@ body {
 
 }
 
+.fa-phone-volume {
+    margin-left: 150px;
+}
+
 #friendss h1 {
     color: #fff;
     margin-top: 25px;
@@ -1169,7 +1100,6 @@ body {
     line-height: 0.5;
     border-bottom: 2px solid #21374f;
 }
-
 
 #friendss h1 i {
     font-size: 18px;
@@ -1190,6 +1120,12 @@ body {
     color: #fff;
 }
 
+.img-friend {
+    width: 50px;
+    height: 45px;
+    border-radius: 3px;
+}
+
 #friendss #friends .friend {
     padding: 15px;
 }
@@ -1200,11 +1136,6 @@ body {
     border-radius: 10px;
 }
 
-
-/* Radar */
-
-
-/* Game */
 
 
 
