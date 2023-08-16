@@ -5,6 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }   
 
+
 .flex {
     display: flex;
     align-items: center;
@@ -677,7 +678,6 @@ body {
 }
 
 
-
 #containers .tabs {
     max-width: 580px;
     height: 52px;
@@ -717,7 +717,6 @@ body {
 }
 
 /* Contents */
-
 #containers #contents .tab-pane  {
     display: none;
 }
@@ -756,6 +755,50 @@ body {
     background: #a1a1a1;
     border-radius: 50%;
 } 
+
+.elip .elip-modal {
+    z-index: 1;
+    position: absolute;
+    width: 250px;
+    height: 414px;
+    background: #fff;
+    top: 40px;
+    left: -100px;
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+    text-align: center;
+    display: none;
+}
+
+.elip .elip-modal > div {
+    padding: 13px 0;
+    font-size: 16px;
+}
+
+.elip > .elip-modal > div:hover {
+    background: #e5e7ea;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #containers #contents .content {
     width: 580px;
@@ -1088,6 +1131,7 @@ body {
 
 }
 
+/* Friends */
 .fa-phone-volume {
     margin-left: 150px;
 }
@@ -1135,6 +1179,95 @@ body {
     cursor: pointer;
     border-radius: 10px;
 }
+
+/* Chats */
+.chats .chat {
+    width: 380px;
+    height: 470px;
+    background: white;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 12px;
+    display: none;
+}
+
+.header-chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+.chats .chat .header-chat .flex > img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.chats .chat .header-chat .right-chat > i {
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.chats .chat .body-chat {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 180px;
+}
+
+.chats .chat .body-chat > img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin: 20px 0 10px 0;
+}
+
+.chats .chat .footer-chat .chat-write {
+    width: 350px;
+    height: 45px;
+    background: #ededed;
+    margin: 10px 15px;
+    border-radius: 10px;
+}
+
+.chats .chat .footer-chat .chat-write > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.chats .chat .footer-chat .chat-write > input {
+    border: none;
+    font-size: 18px;
+    background: #ededed;
+    color: #a6a6a6;
+    line-height: 1.6;
+}
+
+.chats .chat .footer-chat .chat-footer-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.chats .chat .footer-chat .chat-footer-icon > div:first-child > i {
+    padding-right: 15px;
+}
+
+.chats .chat .footer-chat .chat-footer-icon i {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+
 
 
 

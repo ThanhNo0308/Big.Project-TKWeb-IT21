@@ -3,17 +3,70 @@ function loadFriends() {
     let d = "";
     for (let e of data)
       d += `
-      <div class="friend flex">
-            <img class="img-friend" src="assets/img/${e.image}">
-            <div class="infor" style="padding-left: 10px;">
-                <b>${e.name}</b>
-            </div>
-          </div>
+      <div class="friend flex" data-chat="${e.id}">
+        <img class="img-friend" src="assets/img/${e.image}">
+        <div class="infor" style="padding-left: 10px;"><b>${e.name}</b></div>
+      </div>
       `
     let f = document.getElementById("friends");
     f.innerHTML = d;
   })
+}
 
+function loadChats() {
+  fetch("assets/data/chats.json").then(res => res.json()).then(data => {
+    let g = "";
+    for (let h of data)
+      g += `
+      <div class="chat" id="${h.id}">
+        <header class="header-chat">
+          <div class="flex">
+            <img src="assets/img/${h.image}">
+            <div><b>${h.name}</b></div>
+          </div>
+          <div class="right-chat">
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-xmark close-chat"></i>
+          </div>
+        </header>
+        <article class="body-chat">
+          <img src="assets/img/${h.image}">
+          <div><b>${h.name}</b></div>
+        </article>
+        <footer class="footer-chat">
+          <div class="chat-write flex">
+            <img src="assets/img/user.png">
+            <input type="text" placeholder="Nhập nội dung tin nhắn">
+          </div>
+          <div class="chat-footer-icon">
+            <div>
+              <i class="fa-solid fa-circle-plus"></i>
+              <i class="fa-regular fa-image"></i>
+              <i class="fa-regular fa-folder-open"></i>
+              <i class="fa-solid fa-gear"></i>
+            </div>
+            <div><i class="fa-regular fa-paper-plane"></i></div>
+          </div>
+        </footer>
+      </div>
+      `
+    let i = document.querySelector(".chats");
+    i.innerHTML = g;
+
+
+
+    // Bật và Tắt đoạn chat
+    $('.friend').click(function() {
+      var chatId = $(this).data('chat');
+      $('.chat').hide();
+      $('#' + chatId).show();
+    });
+  
+    $('.close-chat').click(function() {
+      $(this).parent().parent().parent().hide();
+    })
+  })
 
 }
 
@@ -41,45 +94,12 @@ function loadBlogs() {
 
 
               // START CLOSE ẨN ACCOUNT
-          var closes = document.getElementsByClassName("acc-close");
-          var hideflacc = document.getElementsByClassName("hidefl-acc");
-
-          // Hàm ẩn phần tử khi bấm vào nút "Close"
-          function hideAccountOnClick() {
-            var account = this.parentNode; // Lấy phần tử cha của nút "Close"
-            account.style.display = "none"; // Ẩn phần tử
-          }
-
-          function hideflAccOnClick() {
-            var acc = this.parentNode; 
-            acc.style.display = "none"; 
-          }
-
-
-
-          // Gán sự kiện cho các nút "Close"
-          for (var i = 0; i < closes.length; i++) {
-            closes[i].addEventListener("click", hideAccountOnClick);
-          }
-
-          for (var i = 0; i < hideflacc.length; i++) {
-            hideflacc[i].addEventListener("click", hideflAccOnClick);
-          }
-
-
-                    // START ẨN FOLLOW
-          var hidefollows = document.getElementsByClassName("hidefl");
-
-          // Hàm ẩn phần tử khi bấm vào nút "Close"
-          function hidefollowOnClick() {
-            var account = this; 
-            account.style.display = "none"; // Ẩn phần tử
-          }
-
-          // Gán sự kiện cho các nút "Close"
-          for (var i = 0; i < hidefollows.length; i++) {
-            hidefollows[i].addEventListener("click", hidefollowOnClick);
-          }
+              $(".acc-close, .hidefl-acc").click(function() {
+                var $account = $(this).closest(".account");
+            
+                // Ẩn mờ và ẩn phần tử .account trong vòng 0.5 giây
+                $account.fadeOut(500);
+              });
 
   })
 }
@@ -89,80 +109,16 @@ function loadBlogs() {
 
 
 
-function DropdownStore() {
-  var dropdownStore = document.querySelector(".dropdown-store-content");
-  var store = document.querySelector(".fa-store")
-
-  if (dropdownStore.style.display === "block") {
-      dropdownStore.style.display = "none";
-      store.style.color = "#a6afb8";
-  } else {
-      dropdownStore.style.display = "block";
-      store.style.color = "white";
-  }
-}
 
 
-function DropdownMessage() {
-  var dropdownMessage = document.querySelector(".dropdown-message-content");
-  var message = document.querySelector(".fa-facebook-messenger")
-
-  if (dropdownMessage.style.display === "block") {
-      dropdownMessage.style.display = "none";
-      message.style.color = "#a6afb8";
-
-  } else {
-      dropdownMessage.style.display = "block";
-      message.style.color = "white";
-
-  }
-}
-
-
-function DropdownUser() {
-  var dropdownUser = document.querySelector(".dropdown-user-content");
-  var user = document.querySelector(".fa-user")
-
-  if (dropdownUser.style.display === "block") {
-      dropdownUser.style.display = "none";
-      user.style.color = "#a6afb8";
-  } else {
-      dropdownUser.style.display = "block";
-      user.style.color = "white";
-
-  }
-}
-
-function DropdownThunder() {
-  var dropdownThunder = document.querySelector(".dropdown-thunder-content");
-  var thunder = document.querySelector(".fa-bolt")
-
-  if (dropdownThunder.style.display === "block") {
-      dropdownThunder.style.display = "none";
-      thunder.style.color = "#a6afb8";
-
-  } else {
-      dropdownThunder.style.display = "block";
-      thunder.style.color = "white";
-  }
-}
-
-
-
-function DropdownElip() {
-  var dropdownElip = document.querySelector(".dropdown-elip-content");
-  if (dropdownElip.style.display === "block") {
-      dropdownElip.style.display = "none";
-  } else {
-      dropdownElip.style.display = "block";
-  }
-}
 
 
 
 window.onload = function() {
     loadBlogs();
     loadFriends();
+    loadChats();
+    
 
     
 
@@ -257,15 +213,86 @@ window.onload = function() {
         pane.classList.add('active')
       }
     })
-
 }
     
 
 
 $(document).ready(() => {
-  $(".fa-heart-pulse").click(function() {
-    $(this).toggleClass('heart');
-  })
+                   // Thả tim
+    $(".fa-heart-pulse").click(function() {
+      $(this).toggleClass('heart');
+    })
+
+
+                  // Ẩn và hiện elip
+    $(".elip").click(function() {
+      var $elip = $(this);
+      var $dropdown = $elip.find(".elip-modal");
+
+      // Ẩn tất cả các dropdown trừ dropdown liền kề của phần tử .elip đã được click
+      $(".elip-modal").not($dropdown).hide();
+
+      // Hiển thị hoặc ẩn dropdown liền kề của phần tử .elip đã được click
+      $dropdown.toggle();
+    });
+
+    $(document).click(function(event) {
+      var $target = $(event.target);
+
+      // Ẩn dropdown khi người dùng click chuột ra ngoài dropdown hoặc .elip
+      if (!$target.closest(".elip, .elip-modal").length) {
+        $(".elip-modal").hide();
+      }
+    });
+
+            // Ẩn và hiển thị Dropdown-Header
+    $('.fa-store').click(function() {
+      toggleDropdown('.dropdown-store-content', '.fa-store');
+    });
+  
+    $('.fa-facebook-messenger').click(function() {
+      toggleDropdown('.dropdown-message-content', '.fa-facebook-messenger');
+    });
+  
+    $('.fa-user').click(function() {
+      toggleDropdown('.dropdown-user-content', '.fa-user');
+    });
+  
+    $('.fa-bolt').click(function() {
+      toggleDropdown('.dropdown-thunder-content', '.fa-bolt');
+    });
+  
+
+    // Chọn phần tử dropdown và biểu tượng tương ứng dựa trên các selector được truyền vào khi gọi hàm
+    function toggleDropdown(dropdownSelector, iconSelector) {
+      var dropdown = $(dropdownSelector);
+      var icon = $(iconSelector);
+      
+      //Kiểm tra trạng thái hiện tại của dropdown
+      if (dropdown.is(':visible')) {
+        dropdown.hide();
+        icon.css('color', '#a6afb8');
+      } else {
+        hideAllDropdowns();
+        dropdown.show();
+        icon.css('color', 'white');
+      }
+    }
+  
+    function hideAllDropdowns() {
+      $('.dropdown-store-content').hide();
+      $('.dropdown-message-content').hide();
+      $('.dropdown-user-content').hide();
+      $('.dropdown-thunder-content').hide();
+  
+      $('.fa-store').css('color', '#a6afb8');
+      $('.fa-facebook-messenger').css('color', '#a6afb8');
+      $('.fa-user').css('color', '#a6afb8');
+      $('.fa-bolt').css('color', '#a6afb8');
+    }
+
+   
+
 })
 
 
