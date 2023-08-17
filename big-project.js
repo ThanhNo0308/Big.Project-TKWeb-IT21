@@ -71,18 +71,19 @@ function loadChats() {
     i.innerHTML = g;
 
 
-
-    // Bật và Tắt đoạn chat
-    $('.friend').click(function() {
-      var chatId = $(this).data('chat');
-      $('.chat').hide();
-      $('#' + chatId).show();
-    });
-  
-    $('.close-chat').click(function() {
-      $(this).parent().parent().parent().hide();
-    })
-  })
+        $(document).ready(() => {
+            // Bật và Tắt đoạn chat
+            $('.friend').click(function() {
+              var chatId = $(this).data('chat');
+              $('.chat').hide();
+              $('#' + chatId).show();
+            });
+          
+            $('.close-chat').click(function() {
+              $(this).parent().parent().parent().hide();
+            })
+          })
+})
 
 }
 
