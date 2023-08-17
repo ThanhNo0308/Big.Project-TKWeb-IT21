@@ -38,4 +38,19 @@
     "name": "David Beckham",
     "style": "",
     "home": "Luân Đôn, Anh"
+}, {
+    "img": "rose.jpg",
+    "name": "Rose",
+    "style": "",
+    "home": "New Zealand, Úc"
+}, {
+    "img": "j-park.jpg",
+    "name": "Jay-Park",
+    "style": "",
+    "home": "Washington, US"
+}, {
+    "img": "tom-crui.jpg",
+    "name": "Tom Cruise",
+    "style": "",
+    "home": "New York, US"
 }]

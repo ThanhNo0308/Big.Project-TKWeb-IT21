@@ -33,6 +33,22 @@ function loadChats() {
         <article class="body-chat">
           <img src="assets/img/${h.image}">
           <div><b>${h.name}</b></div>
+          <div>
+            <div class="content-chat flex">
+              <img src="assets/img/${h.image}">
+              <div>${h.chat1}</div>
+            </div>
+            <div class="content-chat flex" style="justify-content: flex-end;">
+              <div style="background: #001935; color: white;">${h.chat2}</div>
+            </div>
+            <div class="content-chat flex">
+              <img src="assets/img/${h.image}">
+              <div>${h.chat3}</div>
+            </div>
+            <div class="content-chat flex" style="justify-content: flex-end;">
+              <div style="background: #001935; color: white;">${h.chat4}</div>
+            </div>
+          </div>
         </article>
         <footer class="footer-chat">
           <div class="chat-write flex">
@@ -98,7 +114,7 @@ function loadBlogs() {
                 var $account = $(this).closest(".account");
             
                 // Ẩn mờ và ẩn phần tử .account trong vòng 0.5 giây
-                $account.fadeOut(500);
+                $account.fadeOut(800);
               });
 
   })
@@ -218,6 +234,10 @@ window.onload = function() {
 
 
 $(document).ready(() => {
+    $(".fl").click(function() {
+      $(this).hide();
+    })
+
                    // Thả tim
     $(".fa-heart-pulse").click(function() {
       $(this).toggleClass('heart');
@@ -245,7 +265,9 @@ $(document).ready(() => {
       }
     });
 
-            // Ẩn và hiển thị Dropdown-Header
+
+
+                // Ẩn và hiển thị Dropdown-Header
     $('.fa-store').click(function() {
       toggleDropdown('.dropdown-store-content', '.fa-store');
     });
@@ -260,6 +282,10 @@ $(document).ready(() => {
   
     $('.fa-bolt').click(function() {
       toggleDropdown('.dropdown-thunder-content', '.fa-bolt');
+    });
+
+    $('.fa-pencil').click(function() {
+      toggleDropdown('.modal-pen-container', '.fa-pencil');
     });
   
 
@@ -284,11 +310,14 @@ $(document).ready(() => {
       $('.dropdown-message-content').hide();
       $('.dropdown-user-content').hide();
       $('.dropdown-thunder-content').hide();
+      $('.modal-pen-container').hide();
+
   
       $('.fa-store').css('color', '#a6afb8');
       $('.fa-facebook-messenger').css('color', '#a6afb8');
       $('.fa-user').css('color', '#a6afb8');
       $('.fa-bolt').css('color', '#a6afb8');
+      $('.fa-pencil').css('color', '#a6afb8');
     }
 
    

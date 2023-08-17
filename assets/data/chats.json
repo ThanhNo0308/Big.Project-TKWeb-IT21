@@ -1,49 +1,97 @@
 [{
     "id": 1,
     "image": "nguyencongphuong.png",
-    "name": "Nguyễn Công Phượng"
+    "name": "Nguyễn Công Phượng",
+    "chat1": "Tối nay đá banh ở đâu",
+    "chat2": "Đá ở sân bóng Thanh Niên, Gò Gấp",
+    "chat3": "Đá trận mấy giờ á",
+    "chat4": "18h30 nha"
 }, {
     "id": 2,
     "image": "hongocha.jpg",
-    "name": "Hồ Ngọc Hà"
+    "name": "Hồ Ngọc Hà",
+    "chat1": "Mai có đi hát không m",
+    "chat2": "không hu, mai t nghỉ 1 bữa",
+    "chat3": "Vậy đi trà sữa nha",
+    "chat4": "Ok chốt"
 }, {
     "id": 3,
     "image": "tranthanh.jpg",
-    "name": "Huỳnh Trấn Thành"
+    "name": "Huỳnh Trấn Thành",
+    "chat1": "Tối nay đi coi a diễn nha",
+    "chat2": "Có vé free thì đi",
+    "chat3": "Do m là bạn nên a mới free",
+    "chat4": "Chịu chịu"
 }, {
     "id": 4,
     "image": "lecongvinh.jpg",
-    "name": "Lê Công Vinh"
+    "name": "Lê Công Vinh",
+    "chat1": "2/9 đi coi t đá chung kết",
+    "chat2": "Gặp đội nào vậy bây",
+    "chat3": "Gặp Sông Lam Nghệ An nha",
+    "chat4": "Ok ok"
 }, {
     "id": 5,
     "image": "phamnhatvuong.webp",
-    "name": "Phạm Nhật Vượng"
+    "name": "Phạm Nhật Vượng",
+    "chat1": "Ê, để chú chỉ m cách làm giàu nè",
+    "chat2": "Chỉ đi, chớ con nghèo quá rồi",
+    "chat3": "Lấy cái gối kê đầu ngủ mơ đi con",
+    "chat4": "Sạo ke quá nha -.-"
 }, {
     "id": 6,
     "image": "danglenguyenvu.jpg",
-    "name": "Đặng Lê Nguyên Vũ"
+    "name": "Đặng Lê Nguyên Vũ",
+    "chat1": "Mai qua quán anh uống cafe",
+    "chat2": "Địa chỉ ở đâu vậy anh",
+    "chat3": "140 Phạm Văn Đồng nha em",
+    "chat4": "Dạ oke anh"
 }, {
     "id": 7,
     "image": "ngobaochau.jpg",
-    "name": "Ngô Bảo Châu"
+    "name": "Ngô Bảo Châu",
+    "chat1": "Để anh giúp chú cách học giỏi Toán",
+    "chat2": "Dạ giúp em với chứ dốt quá rồi :((",
+    "chat3": "Làm bài tập nhiều vào nha e trai",
+    "chat4": "Em cũng làm nhiều mà chưa giỏi nỗi :(("
 }, {
     "id": 8,
     "image": "madihu.jpg",
-    "name": "Madihu"
+    "name": "Madihu",
+    "chat1": "Mai giúp t làm bài nhạc coi",
+    "chat2": "Cho t hát thì t giúp",
+    "chat3": "Thôi, m hát như đấm với âm nhạc",
+    "chat4": "Vậy t hong giúp :)"
 }, {
     "id": 9,
     "image": "ynhi.jpg",
-    "name": "Huỳnh Trần Ý Nhi"
+    "name": "Huỳnh Trần Ý Nhi",
+    "chat1": "M coi tin tức t làm hoa hậu chưa",
+    "chat2": "Coi rồi má",
+    "chat3": "Dạo này báo chí ghê quá m",
+    "chat4": "Cũng do m không mà -.-"
 }, {
     "id": 10,
     "image": "diepbang.jpg",
-    "name": "Trần Diệp Băng"
+    "name": "Trần Diệp Băng",
+    "chat1": "Hôm nào đi trà sữa tâm sự chơi",
+    "chat2": "Sao nữa, thất tình hả kkk",
+    "chat3": "Đúng dậy :(((",
+    "chat4": "Ok, chốt ngày đi"
 }, {
     "id": 11,
     "image": "thuytien.jpg",
-    "name": "Nguyễn Thúc Thùy Tiên"
+    "name": "Nguyễn Thúc Thùy Tiên",
+    "chat1": "Năm sau đi Angola chơi không em",
+    "chat2": "Dạ nhưng chị lo phí cho em nghen",
+    "chat3": "Ok em, qua gặp anh Linh của chị",
+    "chat4": "Dạ em cũng muốn gặp ảnh"
 }, {
     "id": 12,
     "image": "rhyder.jpg",
-    "name": "Quang Anh"
+    "name": "Quang Anh",
+    "chat1": "Thứ 7 tuần này nhớ coi Rap Việt nha bây",
+    "chat2": "Tới bảng của m rồi hả",
+    "chat3": "Đúng rồi, coi cổ vũ bạn bè nha m",
+    "chat4": "Biết rồi che"
 }]

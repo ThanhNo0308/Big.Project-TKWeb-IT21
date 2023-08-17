@@ -120,7 +120,7 @@ body {
 }
 
 #header .subheader .righthd a:last-child i {
-    background-color: #00b8ff;
+    background-color: #3300ff;
     padding: 5px 10px;
     border-radius: 3px;
 }
@@ -1220,16 +1220,29 @@ body {
 
 .chats .chat .body-chat {
     text-align: center;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 180px;
 }
 
 .chats .chat .body-chat > img {
-    width: 72px;
-    height: 72px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
-    margin: 20px 0 10px 0;
+    margin: 10px 0 10px 0;
 }
+
+.chats .chat .body-chat > div > div > img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.chats .chat .body-chat > div > .content-chat > div {
+    background: #e4e6eb;
+    padding: 10px;
+    margin: 5px 10px 5px 0;
+    border-radius: 20px;
+}
+
 
 .chats .chat .footer-chat .chat-write {
     width: 350px;
