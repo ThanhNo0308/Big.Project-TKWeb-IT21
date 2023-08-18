@@ -92,8 +92,7 @@ body {
 }
 
 #header .subheader .lefthd input:focus {
-    padding-left: 10px;
-    background: white;
+    outline: none;
 }
 
 #header .subheader .lefthd .search:focus {
@@ -349,6 +348,16 @@ body {
     border-radius: 3px;
 }
 
+.log-out {
+    color: #000;
+    text-decoration: none;
+    margin-left: 105px;
+}
+
+.log-out:hover {
+    text-decoration: underline;
+}
+
 .dropdown-user-content .user-top li:hover:not(:first-child) {
     background: #ccc;
     cursor: pointer;
@@ -594,6 +603,123 @@ body {
     padding-left: 10px;
 }
 
+/* Modal-Content */
+.img-modal-content {
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    margin: 10px 10px 10px 10px;
+}
+
+.modal-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 999;
+}
+
+.modal-content.open {
+    display: flex;
+
+}
+
+.modal-content-container {
+    background: #fff;
+    border-radius: 3px;
+    width: 600px;
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeInContent ease 0.4s;
+    z-index: 999;
+    margin: 20px auto;
+}
+
+@keyframes modalFadeInContent {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.modal-content-header {
+    background: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    color: #000;
+    padding-left: 20px;
+    border-radius: 3px;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-content-body {
+    border-bottom: 1px solid #999999;
+}
+
+.modal-content-body .flex i {
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-top: 15px;
+} 
+
+.modal-content-body .flex i:hover {
+    cursor: pointer;
+}
+
+.modal-content-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: hidden;
+}
+
+.modal-content-input::placeholder {
+    font-size: 20px;
+}
+
+.modal-content-close {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #000;
+    padding: 5px 12px;
+    cursor: pointer;
+    background: #ccc;
+    border-radius: 18px;
+}
+
+.modal-content-footer {
+    padding: 16px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-content-footer div {
+    margin-right: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 2px solid #999999;
+    border-radius: 18px;
+}
+
+.modal-content-footer div i {
+    padding-left: 10px;
+}
+
+
+
 /* Main-Content */
 #main-content {
     box-sizing: border-box;
@@ -627,6 +753,8 @@ body {
     margin-left: 20px;
 }
 
+
+/* Nav */
 #containers #nav {
     box-sizing: border-box;
     width: 580px;
@@ -640,6 +768,62 @@ body {
     display: flex;
     position: relative;
 }
+
+.cover-img-user {
+    width: 280px;
+    height: 150px;
+    border-radius: 3px 3px 0 0;
+}
+
+.infor-img-user {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 102px;
+    left: 105px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.name-user {
+    margin-top: 22px;
+}
+
+.infor-user {
+    position: absolute;
+    width: 280px;
+    height: 220px;
+    background: #cbcbcb;
+    left: -195px;
+    top: 75px;
+    z-index: 999;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+    border-radius: 3px;
+    display: none;
+    text-align: center;
+}
+
+.img:hover ~ .infor-user {
+    display: block;
+}
+
+.infor-user:hover {
+    display: block;
+}
+
+.infor-user .header-user {
+    position: absolute;
+    width: 260px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 23px;
+    color: white;
+    margin: 10px 20px 0 0 ;
+    cursor: pointer;
+}
+
+
+
 
 
 #containers #nav ul li {
@@ -732,6 +916,7 @@ body {
     top: 0;
     left: -85px;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 
@@ -760,7 +945,7 @@ body {
     z-index: 1;
     position: absolute;
     width: 250px;
-    height: 414px;
+    height: 415px;
     background: #fff;
     top: 40px;
     left: -100px;
@@ -813,7 +998,7 @@ body {
     border-radius: 3px;
 }
 
-#containers #contents .content header {
+#containers #contents .content > header {
     min-height: 64px;
 }
 
@@ -851,7 +1036,7 @@ body {
 
 .tag {
     color: #585858 !important;
-    text-decoration: none !important;
+    text-decoration: none;
     padding-right: 10px;
 }
 
@@ -873,7 +1058,7 @@ body {
     cursor: pointer;
 }
 
-#containers #contents .content footer {
+#containers #contents .content > footer {
     border-top: 1px solid #747474;
     margin: 0 10px;
     display: flex;
@@ -881,7 +1066,7 @@ body {
     align-items: center;
 }
 
-#containers #contents .content footer div {
+#containers #contents .content footer > .note {
     padding: 6px 16px;
     border: 1px solid #595959;
     border-radius: 18px;
@@ -893,7 +1078,89 @@ body {
     margin: 10px 15px;
     font-size: 25px;
     cursor: pointer;
+    position: relative;
 }
+
+/* Start Share */
+.content footer .share-modal {
+    width: 330px;
+    height: 315px;
+    background: #fff;
+    position: absolute;
+    z-index: 999;
+    bottom: -270px;
+    right: 235px;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+    border-radius: 3px;
+    display: none;
+}
+
+
+.content footer .share-modal .header-share {
+    margin: 10px;
+}
+
+.content footer .share-modal .header-share > i {
+    font-size: 20px;
+    color: #5e5e5e;
+}
+
+.content footer .share-modal .header-share > input {
+    border: none;
+    font-size: 17px;
+    margin-left: 15px;
+    line-height: 1.6;
+}
+
+.content footer .share-modal .header-share > input:focus {
+    outline: none;
+}
+
+.content footer .share-modal > article {
+    overflow-x: scroll;
+}
+
+.content footer .share-modal > article > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content footer .share-modal > article > div > div {
+    font-size: 15px;
+}
+
+.content footer .share-modal > article > div > img {
+    width: 60px;
+    height: 60px ;
+    border-radius: 3px;
+}
+
+.content footer .share-modal > footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: #d1d1d1;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.content footer .share-modal > footer > div > i {
+    font-size: 25px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 100%;
+}
+
+.content footer .share-modal > footer > div > div {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* Comment */
+
 
 
 
@@ -1210,6 +1477,17 @@ body {
     border-radius: 50%;
     margin: 0 10px 0 10px;
     cursor: pointer;
+    position: relative;
+}
+
+.fa-circle {
+    font-size: 12px;
+    color: #31a24c;
+    position: absolute;
+    left: 37px;
+    top: 35px;
+    border: 3px solid white;
+    border-radius: 50%;
 }
 
 .chats .chat .header-chat .right-chat > i {
@@ -1226,14 +1504,16 @@ body {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 5px 0;
+    cursor: pointer;
 }
 
-.chats .chat .body-chat > div > div > img {
+.chats .chat .body-chat > div > div img {
     width: 36px;
     height: 36px;
     border-radius: 50%;
     margin: 10px;
+    cursor: pointer;
 }
 
 .chats .chat .body-chat > div > .content-chat > div {
@@ -1266,6 +1546,11 @@ body {
     background: #ededed;
     color: #a6a6a6;
     line-height: 1.6;
+}
+
+.chats .chat .footer-chat .chat-write > input:focus {
+    outline: none;
+    color: black;
 }
 
 .chats .chat .footer-chat .chat-footer-icon {

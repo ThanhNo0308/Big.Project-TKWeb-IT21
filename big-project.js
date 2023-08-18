@@ -22,7 +22,11 @@ function loadChats() {
         <header class="header-chat">
           <div class="flex">
             <img src="assets/img/${h.image}">
-            <div><b>${h.name}</b></div>
+            <i class="fa-solid fa-circle"></i>
+            <div>
+              <b>${h.name}</b>
+              <div style="font-size: 14px;">Đang hoạt động</div>
+            </div>
           </div>
           <div class="right-chat">
             <i class="fa-solid fa-phone"></i>
@@ -32,7 +36,7 @@ function loadChats() {
         </header>
         <article class="body-chat">
           <img src="assets/img/${h.image}">
-          <div><b>${h.name}</b></div>
+          <div style="margin-bottom: 5px;"><b>${h.name}</b></div>
           <div>
             <div class="content-chat flex">
               <img src="assets/img/${h.image}">
@@ -125,20 +129,10 @@ function loadBlogs() {
 
 
 
-
-
-
-
-
-
 window.onload = function() {
     loadBlogs();
     loadFriends();
     loadChats();
-    
-
-    
-
 
   
                  // START HIEN THI MODAL-NAV
@@ -197,7 +191,8 @@ window.onload = function() {
         
     modalpen.addEventListener('click', hideModalPens)
         
-        
+
+
         
         
               // START HIEN THI CONTENT
@@ -231,6 +226,8 @@ window.onload = function() {
       }
     })
 }
+
+
     
 
 
@@ -318,9 +315,52 @@ $(document).ready(() => {
       $('.fa-facebook-messenger').css('color', '#a6afb8');
       $('.fa-user').css('color', '#a6afb8');
       $('.fa-bolt').css('color', '#a6afb8');
-      $('.fa-pencil').css('color', '#a6afb8');
+      $('.fa-pencil').css('color', '#001935');
     }
 
+
+                  // Hiển thị Modal-Content
+                  $(".js-show-modal-content").click(function() {
+                    var modal = $(this).closest(".content").find(".js-modal-content");
+                    modal.show();
+                  });
+                  
+                  $(".js-modal-content-close").click(function() {
+                    var modal = $(this).closest(".js-modal-content");
+                    modal.hide();
+                  });
+
+                  $(".js-modal-content").click(function(e) {
+                    if (e.target === this) {
+                      $(this).hide();
+                    }
+                  });
+
+
+                      // Ẩn và hiện Share
+                      $(".share").click(function() {
+                        var $elip = $(this);
+                        var $dropdown = $elip.find(".share-modal");
+                        
+                        $(".share-modal").not($dropdown).hide();
+                        
+                        $dropdown.toggle();
+                      });
+                      
+                  
+                      $(document).click(function(event) {
+                        var $target = $(event.target);
+                  
+                        // Ẩn dropdown khi người dùng click chuột ra ngoài dropdown hoặc .elip
+                        if (!$target.closest(".share, .share-modal").length) {
+                          $(".share-modal").hide();
+                        }
+                      });
+
+
+
+
+                    
    
 
 })
