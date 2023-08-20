@@ -104,11 +104,22 @@ body {
     font-size: 20px;
 }
 
+
+
 #header .subheader .righthd a > i{
     font-size: 25px;
     color: #a6afb8;
     padding: 0 15px 0 15px;
 }
+
+/* .show-nav > i {
+    font-size: 25px;
+    color: #a6afb8;
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    display: none;
+} */
 
 #header .subheader .righthd i:hover {
     cursor: pointer;
@@ -719,6 +730,108 @@ body {
 }
 
 
+/* Modal-Header */
+.modal-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-nav.open {
+    display: flex;
+}
+
+.modal-nav-container {
+    background: #001935;
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    animation: modalnavFadeIn ease 0.4s;
+}
+
+@keyframes modalnavFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.modal-nav-container .header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+}
+
+.modal-nav-container .header-nav i {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.modal-nav-container .body-nav > div {
+    color: #99a3ae;
+    padding: 12px 0 12px 20px;
+}
+
+.modal-nav-container .body-nav > div:hover {
+    background: #122943;
+    cursor: pointer;
+}
+
+.modal-nav-container .body-nav i {
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+.modal-nav-container .footer-nav .flex {
+    color: white;
+    border-bottom: 1px solid #21374f;
+    padding: 0 10px 20px 15px;
+    font-size: 14px;
+    margin-top: 150px;
+}
+
+.modal-nav-container .footer-nav .flex div {
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.modal-nav-container .footer-nav .flex div:hover {
+    text-decoration: underline;
+}
+
+.modal-nav-container .footer-nav .pencil-modal > div > i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.modal-nav-container .footer-nav .pencil-modal > div {
+    display: inline-block;
+    padding: 10px 82px;
+    background: #00b8ff;
+    margin: 14px 22px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 /* Main-Content */
 #main-content {
@@ -1159,7 +1272,6 @@ body {
     margin-top: 5px;
 }
 
-/* Comment */
 
 
 

@@ -295,7 +295,45 @@
             </div>
           </div>
           <!-- End Modal -->
-    </div>
+        </div>
+        <div class="show-nav">
+          <i class="fa-solid fa-bars show-header"></i>
+        </div>
+            <!-- Start Modal Header -->
+            <div class="modal-nav">
+              <div class="modal-nav-container">
+                <div class="header-nav">
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-solid fa-xmark modal-nav-close" style="color: #99a3ae;"></i>
+                </div>
+                <div class="body-nav">
+                  <div style="color: #fff;"><i class="fa-solid fa-house"></i>Home</div>
+                  <div><i class="fa-regular fa-compass"></i>Explore</div>
+                  <div><i class="fa-solid fa-bolt"></i>Activity</div>
+                  <div><i class="fa-brands fa-facebook-messenger"></i>Messages</div>
+                  <div><i class="fa-solid fa-envelope"></i>Inbox</div>
+                  <div><i class="fa-solid fa-user"></i>Account</div>
+                  <div><i class="fa-solid fa-gear"></i>Settings</div>
+                  <div><i class="fa-solid fa-store"></i>TumblrMart</div>
+                  <div><i class="fa-solid fa-earth-americas"></i>Get a domain</div>
+                  <div><i class="fa-solid fa-wand-magic-sparkles"></i>Go Ad-Free</div>
+                </div>
+                <div class="footer-nav">
+                  <div class="flex">
+                    <div>About</div>
+                    <div>Apps</div>
+                    <div>Legal</div>
+                    <div>Privacy</div>
+                    <div>Help</div>
+                  </div>
+                  <div class="pencil-modal">
+                    <div class="showhd-modal-pen"><i class="fa-solid fa-pencil"></i><b>Create</b></div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <!-- End Modal Header -->
   </div>  
   <!-- End Header -->
   <div id="main-content">
@@ -527,7 +565,6 @@
                       </div>
                     </footer>
                   </div>
-                  
                 </div>
                 <li><i class="fa-regular fa-comment"></i></li>
                 <li><i class="fa-solid fa-repeat js-show-modal-content"></i></li>
@@ -1587,8 +1624,22 @@
           <!-- 9 -->
           <div class="content">
             <img class="img" src="assets/img/user4.jpg">
+            <div class="infor-user">
+              <div>
+                <div class="header-user">
+                  <div>
+                    <i style="margin-right: 15px;" class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <img class="cover-img-user" src="assets/img/infor-user4.jpg">
+                <img class="infor-img-user" src="assets/img/user4.jpg">
+                <div class="name-user"><b>Sports</b></div>
+              </div>
+            </div>
             <header class="flex">
               <div class="name">Sports</div>
+              <div class="fl hidefl">Follow</div>
               <div class="elip">
                 <i class="fa-solid fa-ellipsis"></i>
                 <div class="elip-modal">
@@ -1621,11 +1672,95 @@
               </div>
             </article>
             <footer>
-              <div><b>1,2K</b> notes</div>
+              <div class="note"><b>1,2K</b> notes</div>
               <ul class="flex">
-                <li><i class="fa-regular fa-share-from-square"></i></li>
+                <div class="share">
+                  <li><i class="fa-regular fa-share-from-square show-share"></i></li>
+                  <div class="share-modal">
+                    <div class="header-share">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input type="text" placeholder="Message to...">
+                    </div>
+                    <article class="flex">
+                      <div>
+                        <img src="assets/img/nguyencongphuong.png">
+                        <div><b>Công Phượng</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/tranthanh.jpg">
+                        <div><b>Trấn Thành</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/phamnhatvuong.webp">
+                        <div><b>Nhật Vượng</b></div>
+                      </div>
+                      <div style="margin-left: 10px;">
+                        <img src="assets/img/ngobaochau.jpg">
+                        <div><b>Bảo Châu</b></div>
+                      </div>
+                      <div style="margin: 0 10px 0 20px;">
+                        <img src="assets/img/diepbang.jpg">
+                        <div><b>Diệp Băng</b></div>
+                      </div>
+                    </article>
+                    <footer>
+                      <div>
+                        <i class="fa-solid fa-copy" style="color: #595959;"></i>
+                        <div>Copy link</div>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-code" style="color: #595959;"></i>
+                        <div>Embed</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-facebook-f" style="padding: 15px 20px; color: #3b5998;"></i>
+                        <div>Facebook</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-twitter" style="color: #55acee;"></i>
+                        <div>Twitter</div>
+                      </div>
+                    </footer>
+                  </div>
+                  
+                </div>
                 <li><i class="fa-regular fa-comment"></i></li>
-                <li><i class="fa-solid fa-repeat"></i></li>
+                <li><i class="fa-solid fa-repeat js-show-modal-content"></i></li>
+                <!-- Start Modal-Content 4 -->
+                <div class="modal-content js-modal-content">
+                  <div class="modal-content-container js-modal-content-container">
+                    <img class="img" src="assets/img/user.png">
+                    <header class="modal-content-header">
+                      <b style="font-size: 18px;">0798693538</b>
+                      <i style="margin: 0 5px 0 15px;" class="fa-solid fa-retweet"></i><span style="color: #595959;font-size: 16px;">ubercharge</span>
+                      <i style="margin-left: 320px;color: #595959;" class="fa-solid fa-gear"></i>
+                    </header>
+                    <div class="modal-content-body">
+                      <div>
+                        <div class="flex">
+                          <img class="img-modal-content" src="assets/img/user4.jpg">
+                          <div><b>Sports</b></div>
+                        </div>
+                        <img src="assets/img/img4.jpg" width="600px" height="400px">
+                      </div>
+                      <div class="flex">
+                        <input type="text" class="modal-content-input"  placeholder="Go ahead, put anything." style="width: 420px;">
+                        <div>
+                          <i class="fa-solid fa-images" style="color: #ff4930;"></i>
+                          <i class="fa-solid fa-link" style="color: #00cf35;"></i>
+                          <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
+                          <i class="fa-solid fa-sliders" style="color: #606060;"></i>
+                        </div>
+                      </div>
+                      <textarea name="modal-content-text" class="modal-content-input" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="modal-content-footer">
+                      <div class="modal-content-close js-modal-content-close">Close</div>
+                      <div>For Everyone<i class="fa-solid fa-chevron-down"></i></div>
+                      <div style="background: #00b8ff; color: #fff;">Reblog<i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                  </div>
+                </div>
                 <li><i class="fa-solid fa-heart-pulse"></i></li>
               </ul>
             </footer>
@@ -1633,8 +1768,22 @@
           <!-- 10 -->
           <div class="content">
             <img class="img" src="assets/img/user5.jpg">
+            <div class="infor-user">
+              <div>
+                <div class="header-user">
+                  <div>
+                    <i style="margin-right: 15px;" class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <img class="cover-img-user" src="assets/img/infor-user5.jpg">
+                <img class="infor-img-user" src="assets/img/user5.jpg">
+                <div class="name-user"><b>VNexpress</b></div>
+              </div>
+            </div>
             <header class="flex">
               <div class="name">VNexpress</div>
+              <div class="fl hidefl">Follow</div>
               <div class="elip">
                 <i class="fa-solid fa-ellipsis"></i>
                 <div class="elip-modal">
@@ -1667,11 +1816,95 @@
               </div>
             </article>
             <footer>
-              <div><b>3,9K</b> notes</div>
+              <div class="note"><b>3,9K</b> notes</div>
               <ul class="flex">
-                <li><i class="fa-regular fa-share-from-square"></i></li>
+                <div class="share">
+                  <li><i class="fa-regular fa-share-from-square show-share"></i></li>
+                  <div class="share-modal">
+                    <div class="header-share">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input type="text" placeholder="Message to...">
+                    </div>
+                    <article class="flex">
+                      <div>
+                        <img src="assets/img/nguyencongphuong.png">
+                        <div><b>Công Phượng</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/tranthanh.jpg">
+                        <div><b>Trấn Thành</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/phamnhatvuong.webp">
+                        <div><b>Nhật Vượng</b></div>
+                      </div>
+                      <div style="margin-left: 10px;">
+                        <img src="assets/img/ngobaochau.jpg">
+                        <div><b>Bảo Châu</b></div>
+                      </div>
+                      <div style="margin: 0 10px 0 20px;">
+                        <img src="assets/img/diepbang.jpg">
+                        <div><b>Diệp Băng</b></div>
+                      </div>
+                    </article>
+                    <footer>
+                      <div>
+                        <i class="fa-solid fa-copy" style="color: #595959;"></i>
+                        <div>Copy link</div>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-code" style="color: #595959;"></i>
+                        <div>Embed</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-facebook-f" style="padding: 15px 20px; color: #3b5998;"></i>
+                        <div>Facebook</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-twitter" style="color: #55acee;"></i>
+                        <div>Twitter</div>
+                      </div>
+                    </footer>
+                  </div>
+                  
+                </div>
                 <li><i class="fa-regular fa-comment"></i></li>
-                <li><i class="fa-solid fa-repeat"></i></li>
+                <li><i class="fa-solid fa-repeat js-show-modal-content"></i></li>
+                <!-- Start Modal-Content 5 -->
+                <div class="modal-content js-modal-content">
+                  <div class="modal-content-container js-modal-content-container">
+                    <img class="img" src="assets/img/user.png">
+                    <header class="modal-content-header">
+                      <b style="font-size: 18px;">0798693538</b>
+                      <i style="margin: 0 5px 0 15px;" class="fa-solid fa-retweet"></i><span style="color: #595959;font-size: 16px;">ubercharge</span>
+                      <i style="margin-left: 320px;color: #595959;" class="fa-solid fa-gear"></i>
+                    </header>
+                    <div class="modal-content-body">
+                      <div>
+                        <div class="flex">
+                          <img class="img-modal-content" src="assets/img/user5.jpg">
+                          <div><b>VNexpress</b></div>
+                        </div>
+                        <img src="assets/img/img5.jpg" width="600px" height="400px">
+                      </div>
+                      <div class="flex">
+                        <input type="text" class="modal-content-input"  placeholder="Go ahead, put anything." style="width: 420px;">
+                        <div>
+                          <i class="fa-solid fa-images" style="color: #ff4930;"></i>
+                          <i class="fa-solid fa-link" style="color: #00cf35;"></i>
+                          <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
+                          <i class="fa-solid fa-sliders" style="color: #606060;"></i>
+                        </div>
+                      </div>
+                      <textarea name="modal-content-text" class="modal-content-input" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="modal-content-footer">
+                      <div class="modal-content-close js-modal-content-close">Close</div>
+                      <div>For Everyone<i class="fa-solid fa-chevron-down"></i></div>
+                      <div style="background: #00b8ff; color: #fff;">Reblog<i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                  </div>
+                </div>
                 <li><i class="fa-solid fa-heart-pulse"></i></li>
               </ul>
             </footer>
@@ -1679,8 +1912,22 @@
           <!-- 11 -->
           <div class="content">
             <img class="img" src="assets/img/user6.jpg">
+            <div class="infor-user">
+              <div>
+                <div class="header-user">
+                  <div>
+                    <i style="margin-right: 15px;" class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <img class="cover-img-user" src="assets/img/infor-user6.png">
+                <img class="infor-img-user" src="assets/img/user6.jpg">
+                <div class="name-user"><b>TinhocMos</b></div>
+              </div>
+            </div>
             <header class="flex">
               <div class="name">TinhocMos</div>
+              <div class="fl hidefl">Follow</div>
               <div class="elip">
                 <i class="fa-solid fa-ellipsis"></i>
                 <div class="elip-modal">
@@ -1713,11 +1960,95 @@
               </div>
             </article>
             <footer>
-              <div><b>1,8K</b> notes</div>
+              <div class="note"><b>1,8K</b> notes</div>
               <ul class="flex">
-                <li><i class="fa-regular fa-share-from-square"></i></li>
+                <div class="share">
+                  <li><i class="fa-regular fa-share-from-square show-share"></i></li>
+                  <div class="share-modal">
+                    <div class="header-share">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input type="text" placeholder="Message to...">
+                    </div>
+                    <article class="flex">
+                      <div>
+                        <img src="assets/img/nguyencongphuong.png">
+                        <div><b>Công Phượng</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/tranthanh.jpg">
+                        <div><b>Trấn Thành</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/phamnhatvuong.webp">
+                        <div><b>Nhật Vượng</b></div>
+                      </div>
+                      <div style="margin-left: 10px;">
+                        <img src="assets/img/ngobaochau.jpg">
+                        <div><b>Bảo Châu</b></div>
+                      </div>
+                      <div style="margin: 0 10px 0 20px;">
+                        <img src="assets/img/diepbang.jpg">
+                        <div><b>Diệp Băng</b></div>
+                      </div>
+                    </article>
+                    <footer>
+                      <div>
+                        <i class="fa-solid fa-copy" style="color: #595959;"></i>
+                        <div>Copy link</div>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-code" style="color: #595959;"></i>
+                        <div>Embed</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-facebook-f" style="padding: 15px 20px; color: #3b5998;"></i>
+                        <div>Facebook</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-twitter" style="color: #55acee;"></i>
+                        <div>Twitter</div>
+                      </div>
+                    </footer>
+                  </div>
+                  
+                </div>
                 <li><i class="fa-regular fa-comment"></i></li>
-                <li><i class="fa-solid fa-repeat"></i></li>
+                <li><i class="fa-solid fa-repeat js-show-modal-content"></i></li>
+                <!-- Start Modal-Content 6 -->
+                <div class="modal-content js-modal-content">
+                  <div class="modal-content-container js-modal-content-container">
+                    <img class="img" src="assets/img/user.png">
+                    <header class="modal-content-header">
+                      <b style="font-size: 18px;">0798693538</b>
+                      <i style="margin: 0 5px 0 15px;" class="fa-solid fa-retweet"></i><span style="color: #595959;font-size: 16px;">ubercharge</span>
+                      <i style="margin-left: 320px;color: #595959;" class="fa-solid fa-gear"></i>
+                    </header>
+                    <div class="modal-content-body">
+                      <div>
+                        <div class="flex">
+                          <img class="img-modal-content" src="assets/img/user6.jpg">
+                          <div><b>TinhocMos</b></div>
+                        </div>
+                        <img src="assets/img/img6.jpg" width="600px" height="400px">
+                      </div>
+                      <div class="flex">
+                        <input type="text" class="modal-content-input"  placeholder="Go ahead, put anything." style="width: 420px;">
+                        <div>
+                          <i class="fa-solid fa-images" style="color: #ff4930;"></i>
+                          <i class="fa-solid fa-link" style="color: #00cf35;"></i>
+                          <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
+                          <i class="fa-solid fa-sliders" style="color: #606060;"></i>
+                        </div>
+                      </div>
+                      <textarea name="modal-content-text" class="modal-content-input" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="modal-content-footer">
+                      <div class="modal-content-close js-modal-content-close">Close</div>
+                      <div>For Everyone<i class="fa-solid fa-chevron-down"></i></div>
+                      <div style="background: #00b8ff; color: #fff;">Reblog<i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                  </div>
+                </div>
                 <li><i class="fa-solid fa-heart-pulse"></i></li>
               </ul>
             </footer>
@@ -1731,6 +2062,19 @@
           <!-- 12 -->
           <div class="content">
             <img class="img" src="assets/img/user7.png">
+            <div class="infor-user">
+              <div>
+                <div class="header-user">
+                  <div>
+                    <i style="margin-right: 15px;" class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <img class="cover-img-user" src="assets/img/infor-user7.jpg">
+                <img class="infor-img-user" src="assets/img/user7.png">
+                <div class="name-user"><b>Phim24h</b></div>
+              </div>
+            </div>
             <header class="flex">
               <div class="name">Phim24h</div>
               <div class="fl hidefl">Follow</div>
@@ -1766,11 +2110,95 @@
               </div>
             </article>
             <footer>
-              <div><b>1,3K</b> notes</div>
+              <div class="note"><b>1,3K</b> notes</div>
               <ul class="flex">
-                <li><i class="fa-regular fa-share-from-square"></i></li>
+                <div class="share">
+                  <li><i class="fa-regular fa-share-from-square show-share"></i></li>
+                  <div class="share-modal">
+                    <div class="header-share">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input type="text" placeholder="Message to...">
+                    </div>
+                    <article class="flex">
+                      <div>
+                        <img src="assets/img/nguyencongphuong.png">
+                        <div><b>Công Phượng</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/tranthanh.jpg">
+                        <div><b>Trấn Thành</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/phamnhatvuong.webp">
+                        <div><b>Nhật Vượng</b></div>
+                      </div>
+                      <div style="margin-left: 10px;">
+                        <img src="assets/img/ngobaochau.jpg">
+                        <div><b>Bảo Châu</b></div>
+                      </div>
+                      <div style="margin: 0 10px 0 20px;">
+                        <img src="assets/img/diepbang.jpg">
+                        <div><b>Diệp Băng</b></div>
+                      </div>
+                    </article>
+                    <footer>
+                      <div>
+                        <i class="fa-solid fa-copy" style="color: #595959;"></i>
+                        <div>Copy link</div>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-code" style="color: #595959;"></i>
+                        <div>Embed</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-facebook-f" style="padding: 15px 20px; color: #3b5998;"></i>
+                        <div>Facebook</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-twitter" style="color: #55acee;"></i>
+                        <div>Twitter</div>
+                      </div>
+                    </footer>
+                  </div>
+                  
+                </div>
                 <li><i class="fa-regular fa-comment"></i></li>
-                <li><i class="fa-solid fa-repeat"></i></li>
+                <li><i class="fa-solid fa-repeat js-show-modal-content"></i></li>
+                <!-- Start Modal-Content 7 -->
+                <div class="modal-content js-modal-content">
+                  <div class="modal-content-container js-modal-content-container">
+                    <img class="img" src="assets/img/user.png">
+                    <header class="modal-content-header">
+                      <b style="font-size: 18px;">0798693538</b>
+                      <i style="margin: 0 5px 0 15px;" class="fa-solid fa-retweet"></i><span style="color: #595959;font-size: 16px;">ubercharge</span>
+                      <i style="margin-left: 320px;color: #595959;" class="fa-solid fa-gear"></i>
+                    </header>
+                    <div class="modal-content-body">
+                      <div>
+                        <div class="flex">
+                          <img class="img-modal-content" src="assets/img/user7.png">
+                          <div><b>Phim24h</b></div>
+                        </div>
+                        <img src="assets/img/img7.jpeg" width="600px" height="400px">
+                      </div>
+                      <div class="flex">
+                        <input type="text" class="modal-content-input"  placeholder="Go ahead, put anything." style="width: 420px;">
+                        <div>
+                          <i class="fa-solid fa-images" style="color: #ff4930;"></i>
+                          <i class="fa-solid fa-link" style="color: #00cf35;"></i>
+                          <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
+                          <i class="fa-solid fa-sliders" style="color: #606060;"></i>
+                        </div>
+                      </div>
+                      <textarea name="modal-content-text" class="modal-content-input" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="modal-content-footer">
+                      <div class="modal-content-close js-modal-content-close">Close</div>
+                      <div>For Everyone<i class="fa-solid fa-chevron-down"></i></div>
+                      <div style="background: #00b8ff; color: #fff;">Reblog<i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                  </div>
+                </div>
                 <li><i class="fa-solid fa-heart-pulse"></i></li>
               </ul>
             </footer>
@@ -1778,6 +2206,19 @@
           <!-- 13 -->
           <div class="content">
             <img class="img" src="assets/img/user3.webp">
+            <div class="infor-user">
+              <div>
+                <div class="header-user">
+                  <div>
+                    <i style="margin-right: 15px;" class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <img class="cover-img-user" src="assets/img/infor-user3.jpg">
+                <img class="infor-img-user" src="assets/img/user3.webp">
+                <div class="name-user"><b>HelpfulTips</b></div>
+              </div>
+            </div>
             <header class="flex">
               <div class="name">HelpfulTips</div>
               <div class="fl hidefl">Follow</div>
@@ -1813,18 +2254,115 @@
               </div>
             </article>
             <footer>
-              <div><b>1,5K</b> notes</div>
+              <div class="note"><b>1,5K</b> notes</div>
               <ul class="flex">
-                <li><i class="fa-regular fa-share-from-square"></i></li>
+                <div class="share">
+                  <li><i class="fa-regular fa-share-from-square show-share"></i></li>
+                  <div class="share-modal">
+                    <div class="header-share">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input type="text" placeholder="Message to...">
+                    </div>
+                    <article class="flex">
+                      <div>
+                        <img src="assets/img/nguyencongphuong.png">
+                        <div><b>Công Phượng</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/tranthanh.jpg">
+                        <div><b>Trấn Thành</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/phamnhatvuong.webp">
+                        <div><b>Nhật Vượng</b></div>
+                      </div>
+                      <div style="margin-left: 10px;">
+                        <img src="assets/img/ngobaochau.jpg">
+                        <div><b>Bảo Châu</b></div>
+                      </div>
+                      <div style="margin: 0 10px 0 20px;">
+                        <img src="assets/img/diepbang.jpg">
+                        <div><b>Diệp Băng</b></div>
+                      </div>
+                    </article>
+                    <footer>
+                      <div>
+                        <i class="fa-solid fa-copy" style="color: #595959;"></i>
+                        <div>Copy link</div>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-code" style="color: #595959;"></i>
+                        <div>Embed</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-facebook-f" style="padding: 15px 20px; color: #3b5998;"></i>
+                        <div>Facebook</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-twitter" style="color: #55acee;"></i>
+                        <div>Twitter</div>
+                      </div>
+                    </footer>
+                  </div>
+                  
+                </div>
                 <li><i class="fa-regular fa-comment"></i></li>
-                <li><i class="fa-solid fa-repeat"></i></li>
+                <li><i class="fa-solid fa-repeat js-show-modal-content"></i></li>
+                <!-- Start Modal-Content 3 -->
+                <div class="modal-content js-modal-content">
+                  <div class="modal-content-container js-modal-content-container">
+                    <img class="img" src="assets/img/user.png">
+                    <header class="modal-content-header">
+                      <b style="font-size: 18px;">0798693538</b>
+                      <i style="margin: 0 5px 0 15px;" class="fa-solid fa-retweet"></i><span style="color: #595959;font-size: 16px;">ubercharge</span>
+                      <i style="margin-left: 320px;color: #595959;" class="fa-solid fa-gear"></i>
+                    </header>
+                    <div class="modal-content-body">
+                      <div>
+                        <div class="flex">
+                          <img class="img-modal-content" src="assets/img/user3.webp">
+                          <div><b>HelpfulTips</b></div>
+                        </div>
+                        <img src="assets/img/img3.jpg" width="600px" height="400px">
+                      </div>
+                      <div class="flex">
+                        <input type="text" class="modal-content-input"  placeholder="Go ahead, put anything." style="width: 420px;">
+                        <div>
+                          <i class="fa-solid fa-images" style="color: #ff4930;"></i>
+                          <i class="fa-solid fa-link" style="color: #00cf35;"></i>
+                          <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
+                          <i class="fa-solid fa-sliders" style="color: #606060;"></i>
+                        </div>
+                      </div>
+                      <textarea name="modal-content-text" class="modal-content-input" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="modal-content-footer">
+                      <div class="modal-content-close js-modal-content-close">Close</div>
+                      <div>For Everyone<i class="fa-solid fa-chevron-down"></i></div>
+                      <div style="background: #00b8ff; color: #fff;">Reblog<i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                  </div>
+                </div>
                 <li><i class="fa-solid fa-heart-pulse"></i></li>
               </ul>
             </footer>
           </div>
           <!-- 14 -->
           <div class="content">
-            <img class="img" src="assets/img/user1.jpg" alt="user1">
+            <img class="img" src="assets/img/user1.jpg">
+            <div class="infor-user">
+              <div>
+                <div class="header-user">
+                  <div>
+                    <i style="margin-right: 15px;" class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <img class="cover-img-user" src="assets/img/infor-user1.jpg">
+                <img class="infor-img-user" src="assets/img/user1.jpg" alt="">
+                <div class="name-user"><b>Developer</b></div>
+              </div>
+            </div>
             <header class="flex">
               <div class="name">Developer</div>
               <div class="fl hidefl">Follow</div>
@@ -1860,11 +2398,94 @@
               </div>
             </article>
             <footer>
-              <div><b>2,7K</b> notes</div>
+              <div class="note"><b>2,7K</b> notes</div>
               <ul class="flex">
-                <li><i class="fa-regular fa-share-from-square"></i></li>
+                <div class="share">
+                  <li><i class="fa-regular fa-share-from-square show-share"></i></li>
+                  <div class="share-modal">
+                    <div class="header-share">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input type="text" placeholder="Message to...">
+                    </div>
+                    <article class="flex">
+                      <div>
+                        <img src="assets/img/nguyencongphuong.png">
+                        <div><b>Công Phượng</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/tranthanh.jpg">
+                        <div><b>Trấn Thành</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/phamnhatvuong.webp">
+                        <div><b>Nhật Vượng</b></div>
+                      </div>
+                      <div style="margin-left: 10px;">
+                        <img src="assets/img/ngobaochau.jpg">
+                        <div><b>Bảo Châu</b></div>
+                      </div>
+                      <div style="margin: 0 10px 0 20px;">
+                        <img src="assets/img/diepbang.jpg">
+                        <div><b>Diệp Băng</b></div>
+                      </div>
+                    </article>
+                    <footer>
+                      <div>
+                        <i class="fa-solid fa-copy" style="color: #595959;"></i>
+                        <div>Copy link</div>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-code" style="color: #595959;"></i>
+                        <div>Embed</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-facebook-f" style="padding: 15px 20px; color: #3b5998;"></i>
+                        <div>Facebook</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-twitter" style="color: #55acee;"></i>
+                        <div>Twitter</div>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
                 <li><i class="fa-regular fa-comment"></i></li>
-                <li><i class="fa-solid fa-repeat"></i></li>
+                <li><i class="fa-solid fa-repeat js-show-modal-content"></i></li>
+                <!-- Start Modal-Content 1 -->
+                <div class="modal-content js-modal-content">
+                  <div class="modal-content-container js-modal-content-container">
+                    <img class="img" src="assets/img/user.png">
+                    <header class="modal-content-header">
+                      <b style="font-size: 18px;">0798693538</b>
+                      <i style="margin: 0 5px 0 15px;" class="fa-solid fa-retweet"></i><span style="color: #595959;font-size: 16px;">ubercharge</span>
+                      <i style="margin-left: 320px;color: #595959;" class="fa-solid fa-gear"></i>
+                    </header>
+                    <div class="modal-content-body">
+                      <div>
+                        <div class="flex">
+                          <img class="img-modal-content" src="assets/img/user1.jpg">
+                          <div><b>Developer</b></div>
+                        </div>
+                        <img src="assets/img/img1.jpg" width="600px" height="400px">
+                      </div>
+                      <div class="flex">
+                        <input type="text" class="modal-content-input"  placeholder="Go ahead, put anything." style="width: 420px;">
+                        <div>
+                          <i class="fa-solid fa-images" style="color: #ff4930;"></i>
+                          <i class="fa-solid fa-link" style="color: #00cf35;"></i>
+                          <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
+                          <i class="fa-solid fa-sliders" style="color: #606060;"></i>
+                        </div>
+                      </div>
+                      <textarea name="modal-content-text" class="modal-content-input" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="modal-content-footer">
+                      <div class="modal-content-close js-modal-content-close">Close</div>
+                      <div>For Everyone<i class="fa-solid fa-chevron-down"></i></div>
+                      <div style="background: #00b8ff; color: #fff;">Reblog<i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                  </div>
+                </div>
                 <li><i class="fa-solid fa-heart-pulse"></i></li>
               </ul>
             </footer>
@@ -1878,6 +2499,19 @@
           <!-- 15 -->
           <div class="content">
             <img class="img" src="assets/img/user8.jpg">
+            <div class="infor-user">
+              <div>
+                <div class="header-user">
+                  <div>
+                    <i style="margin-right: 15px;" class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <img class="cover-img-user" src="assets/img/infor-user8.jpg">
+                <img class="infor-img-user" src="assets/img/user8.jpg">
+                <div class="name-user"><b>DayTravel</b></div>
+              </div>
+            </div>
             <header class="flex">
               <div class="name">DayTravel</div>
               <div class="fl hidefl">Follow</div>
@@ -1913,11 +2547,95 @@
               </div>
             </article>
             <footer>
-              <div><b>2,2K</b> notes</div>
+              <div class="note"><b>2,2K</b> notes</div>
               <ul class="flex">
-                <li><i class="fa-regular fa-share-from-square"></i></li>
+                <div class="share">
+                  <li><i class="fa-regular fa-share-from-square show-share"></i></li>
+                  <div class="share-modal">
+                    <div class="header-share">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input type="text" placeholder="Message to...">
+                    </div>
+                    <article class="flex">
+                      <div>
+                        <img src="assets/img/nguyencongphuong.png">
+                        <div><b>Công Phượng</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/tranthanh.jpg">
+                        <div><b>Trấn Thành</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/phamnhatvuong.webp">
+                        <div><b>Nhật Vượng</b></div>
+                      </div>
+                      <div style="margin-left: 10px;">
+                        <img src="assets/img/ngobaochau.jpg">
+                        <div><b>Bảo Châu</b></div>
+                      </div>
+                      <div style="margin: 0 10px 0 20px;">
+                        <img src="assets/img/diepbang.jpg">
+                        <div><b>Diệp Băng</b></div>
+                      </div>
+                    </article>
+                    <footer>
+                      <div>
+                        <i class="fa-solid fa-copy" style="color: #595959;"></i>
+                        <div>Copy link</div>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-code" style="color: #595959;"></i>
+                        <div>Embed</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-facebook-f" style="padding: 15px 20px; color: #3b5998;"></i>
+                        <div>Facebook</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-twitter" style="color: #55acee;"></i>
+                        <div>Twitter</div>
+                      </div>
+                    </footer>
+                  </div>
+                  
+                </div>
                 <li><i class="fa-regular fa-comment"></i></li>
-                <li><i class="fa-solid fa-repeat"></i></li>
+                <li><i class="fa-solid fa-repeat js-show-modal-content"></i></li>
+                 <!-- Start Modal-Content 8 -->
+                 <div class="modal-content js-modal-content">
+                  <div class="modal-content-container js-modal-content-container">
+                    <img class="img" src="assets/img/user.png">
+                    <header class="modal-content-header">
+                      <b style="font-size: 18px;">0798693538</b>
+                      <i style="margin: 0 5px 0 15px;" class="fa-solid fa-retweet"></i><span style="color: #595959;font-size: 16px;">ubercharge</span>
+                      <i style="margin-left: 320px;color: #595959;" class="fa-solid fa-gear"></i>
+                    </header>
+                    <div class="modal-content-body">
+                      <div>
+                        <div class="flex">
+                          <img class="img-modal-content" src="assets/img/user8.jpg">
+                          <div><b>DayTravel</b></div>
+                        </div>
+                        <img src="assets/img/img8.jpg" width="600px" height="400px">
+                      </div>
+                      <div class="flex">
+                        <input type="text" class="modal-content-input"  placeholder="Go ahead, put anything." style="width: 420px;">
+                        <div>
+                          <i class="fa-solid fa-images" style="color: #ff4930;"></i>
+                          <i class="fa-solid fa-link" style="color: #00cf35;"></i>
+                          <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
+                          <i class="fa-solid fa-sliders" style="color: #606060;"></i>
+                        </div>
+                      </div>
+                      <textarea name="modal-content-text" class="modal-content-input" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="modal-content-footer">
+                      <div class="modal-content-close js-modal-content-close">Close</div>
+                      <div>For Everyone<i class="fa-solid fa-chevron-down"></i></div>
+                      <div style="background: #00b8ff; color: #fff;">Reblog<i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                  </div>
+                </div>
                 <li><i class="fa-solid fa-heart-pulse"></i></li>
               </ul>
             </footer>
@@ -1925,13 +2643,26 @@
           <!-- 16 -->
           <div class="content">
             <img class="img" src="assets/img/user2.jpg">
+            <div class="infor-user">
+              <div>
+                <div class="header-user">
+                  <div>
+                    <i style="margin-right: 15px;" class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <img class="cover-img-user" src="assets/img/infor-user2.jpg">
+                <img class="infor-img-user" src="assets/img/user2.jpg" alt="">
+                <div class="name-user"><b>Tintuc24h</b></div>
+              </div>
+            </div>
             <header class="flex">
               <div class="name">Tintuc24h</div>
               <div class="fl hidefl">Follow</div>
               <div class="elip">
                 <i class="fa-solid fa-ellipsis"></i>
                 <div class="elip-modal">
-                  <div>August 3rd, 1:53 PM</div>
+                  <div>August 3rd, 1:53 AM</div>
                   <div>Community Label: Everyone<br><span style="color: #00b8ff;">Missing label?</span></div>
                   <div><b>Copy link</b></div>
                   <div><b>Unfollow</b></div>
@@ -1960,11 +2691,95 @@
               </div>
             </article>
             <footer>
-              <div><b>1,5K</b> notes</div>
+              <div class="note"><b>1,5K</b> notes</div>
               <ul class="flex">
-                <li><i class="fa-regular fa-share-from-square"></i></li>
+                <div class="share">
+                  <li><i class="fa-regular fa-share-from-square show-share"></i></li>
+                  <div class="share-modal">
+                    <div class="header-share">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input type="text" placeholder="Message to...">
+                    </div>
+                    <article class="flex">
+                      <div>
+                        <img src="assets/img/nguyencongphuong.png">
+                        <div><b>Công Phượng</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/tranthanh.jpg">
+                        <div><b>Trấn Thành</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/phamnhatvuong.webp">
+                        <div><b>Nhật Vượng</b></div>
+                      </div>
+                      <div style="margin-left: 10px;">
+                        <img src="assets/img/ngobaochau.jpg">
+                        <div><b>Bảo Châu</b></div>
+                      </div>
+                      <div style="margin: 0 10px 0 20px;">
+                        <img src="assets/img/diepbang.jpg">
+                        <div><b>Diệp Băng</b></div>
+                      </div>
+                    </article>
+                    <footer>
+                      <div>
+                        <i class="fa-solid fa-copy" style="color: #595959;"></i>
+                        <div>Copy link</div>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-code" style="color: #595959;"></i>
+                        <div>Embed</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-facebook-f" style="padding: 15px 20px; color: #3b5998;"></i>
+                        <div>Facebook</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-twitter" style="color: #55acee;"></i>
+                        <div>Twitter</div>
+                      </div>
+                    </footer>
+                  </div>
+                  
+                </div>
                 <li><i class="fa-regular fa-comment"></i></li>
-                <li><i class="fa-solid fa-repeat"></i></li>
+                <li><i class="fa-solid fa-repeat js-show-modal-content"></i></li>
+                <!-- Start Modal-Content 2 -->
+                <div class="modal-content js-modal-content">
+                  <div class="modal-content-container js-modal-content-container">
+                    <img class="img" src="assets/img/user.png">
+                    <header class="modal-content-header">
+                      <b style="font-size: 18px;">0798693538</b>
+                      <i style="margin: 0 5px 0 15px;" class="fa-solid fa-retweet"></i><span style="color: #595959;font-size: 16px;">ubercharge</span>
+                      <i style="margin-left: 320px;color: #595959;" class="fa-solid fa-gear"></i>
+                    </header>
+                    <div class="modal-content-body">
+                      <div>
+                        <div class="flex">
+                          <img class="img-modal-content" src="assets/img/user2.jpg">
+                          <div><b>Tintuc24h</b></div>
+                        </div>
+                        <img src="assets/img/img2.jpg" width="600px" height="400px">
+                      </div>
+                      <div class="flex">
+                        <input type="text" class="modal-content-input"  placeholder="Go ahead, put anything." style="width: 420px;">
+                        <div>
+                          <i class="fa-solid fa-images" style="color: #ff4930;"></i>
+                          <i class="fa-solid fa-link" style="color: #00cf35;"></i>
+                          <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
+                          <i class="fa-solid fa-sliders" style="color: #606060;"></i>
+                        </div>
+                      </div>
+                      <textarea name="modal-content-text" class="modal-content-input" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="modal-content-footer">
+                      <div class="modal-content-close js-modal-content-close">Close</div>
+                      <div>For Everyone<i class="fa-solid fa-chevron-down"></i></div>
+                      <div style="background: #00b8ff; color: #fff;">Reblog<i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                  </div>
+                </div>
                 <li><i class="fa-solid fa-heart-pulse"></i></li>
               </ul>
             </footer>
@@ -1972,13 +2787,26 @@
           <!-- 17 -->
           <div class="content">
             <img class="img" src="assets/img/user5.jpg">
+            <div class="infor-user">
+              <div>
+                <div class="header-user">
+                  <div>
+                    <i style="margin-right: 15px;" class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <img class="cover-img-user" src="assets/img/infor-user5.jpg">
+                <img class="infor-img-user" src="assets/img/user5.jpg">
+                <div class="name-user"><b>VNexpress</b></div>
+              </div>
+            </div>
             <header class="flex">
               <div class="name">VNexpress</div>
               <div class="fl hidefl">Follow</div>
               <div class="elip">
                 <i class="fa-solid fa-ellipsis"></i>
                 <div class="elip-modal">
-                  <div>September 2nd, 9:12 PM</div>
+                  <div>September 2nd, 8:12 PM</div>
                   <div>Community Label: Everyone<br><span style="color: #00b8ff;">Missing label?</span></div>
                   <div><b>Copy link</b></div>
                   <div><b>Unfollow</b></div>
@@ -2007,11 +2835,95 @@
               </div>
             </article>
             <footer>
-              <div><b>3,9K</b> notes</div>
+              <div class="note"><b>3,9K</b> notes</div>
               <ul class="flex">
-                <li><i class="fa-regular fa-share-from-square"></i></li>
+                <div class="share">
+                  <li><i class="fa-regular fa-share-from-square show-share"></i></li>
+                  <div class="share-modal">
+                    <div class="header-share">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input type="text" placeholder="Message to...">
+                    </div>
+                    <article class="flex">
+                      <div>
+                        <img src="assets/img/nguyencongphuong.png">
+                        <div><b>Công Phượng</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/tranthanh.jpg">
+                        <div><b>Trấn Thành</b></div>
+                      </div>
+                      <div>
+                        <img src="assets/img/phamnhatvuong.webp">
+                        <div><b>Nhật Vượng</b></div>
+                      </div>
+                      <div style="margin-left: 10px;">
+                        <img src="assets/img/ngobaochau.jpg">
+                        <div><b>Bảo Châu</b></div>
+                      </div>
+                      <div style="margin: 0 10px 0 20px;">
+                        <img src="assets/img/diepbang.jpg">
+                        <div><b>Diệp Băng</b></div>
+                      </div>
+                    </article>
+                    <footer>
+                      <div>
+                        <i class="fa-solid fa-copy" style="color: #595959;"></i>
+                        <div>Copy link</div>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-code" style="color: #595959;"></i>
+                        <div>Embed</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-facebook-f" style="padding: 15px 20px; color: #3b5998;"></i>
+                        <div>Facebook</div>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-twitter" style="color: #55acee;"></i>
+                        <div>Twitter</div>
+                      </div>
+                    </footer>
+                  </div>
+                  
+                </div>
                 <li><i class="fa-regular fa-comment"></i></li>
-                <li><i class="fa-solid fa-repeat"></i></li>
+                <li><i class="fa-solid fa-repeat js-show-modal-content"></i></li>
+                <!-- Start Modal-Content 5 -->
+                <div class="modal-content js-modal-content">
+                  <div class="modal-content-container js-modal-content-container">
+                    <img class="img" src="assets/img/user.png">
+                    <header class="modal-content-header">
+                      <b style="font-size: 18px;">0798693538</b>
+                      <i style="margin: 0 5px 0 15px;" class="fa-solid fa-retweet"></i><span style="color: #595959;font-size: 16px;">ubercharge</span>
+                      <i style="margin-left: 320px;color: #595959;" class="fa-solid fa-gear"></i>
+                    </header>
+                    <div class="modal-content-body">
+                      <div>
+                        <div class="flex">
+                          <img class="img-modal-content" src="assets/img/user5.jpg">
+                          <div><b>VNexpress</b></div>
+                        </div>
+                        <img src="assets/img/img5.jpg" width="600px" height="400px">
+                      </div>
+                      <div class="flex">
+                        <input type="text" class="modal-content-input"  placeholder="Go ahead, put anything." style="width: 420px;">
+                        <div>
+                          <i class="fa-solid fa-images" style="color: #ff4930;"></i>
+                          <i class="fa-solid fa-link" style="color: #00cf35;"></i>
+                          <i class="fa-solid fa-headset" style="color: #7c5cff;"></i>
+                          <i class="fa-solid fa-sliders" style="color: #606060;"></i>
+                        </div>
+                      </div>
+                      <textarea name="modal-content-text" class="modal-content-input" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="modal-content-footer">
+                      <div class="modal-content-close js-modal-content-close">Close</div>
+                      <div>For Everyone<i class="fa-solid fa-chevron-down"></i></div>
+                      <div style="background: #00b8ff; color: #fff;">Reblog<i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                  </div>
+                </div>
                 <li><i class="fa-solid fa-heart-pulse"></i></li>
               </ul>
             </footer>

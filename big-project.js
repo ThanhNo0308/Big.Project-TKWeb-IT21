@@ -225,6 +225,10 @@ window.onload = function() {
         pane.classList.add('active')
       }
     })
+
+
+
+
 }
 
 
@@ -319,7 +323,7 @@ $(document).ready(() => {
     }
 
 
-                  // Hiển thị Modal-Content
+                  // Hiển thị Modal-Reblog
                   $(".js-show-modal-content").click(function() {
                     var modal = $(this).closest(".content").find(".js-modal-content");
                     modal.show();
@@ -337,28 +341,79 @@ $(document).ready(() => {
                   });
 
 
-                      // Ẩn và hiện Share
-                      $(".share").click(function() {
-                        var $elip = $(this);
-                        var $dropdown = $elip.find(".share-modal");
+                  // Ẩn và hiện Share
+                  $(".share").click(function() {
+                    var $elip = $(this);
+                    var $dropdown = $elip.find(".share-modal");
+                    
+                    $(".share-modal").not($dropdown).hide();
+                    
+                    $dropdown.toggle();
+                  });
+
+                  $(".share-modal").click(function(event) {
+                    event.stopPropagation();
+                  });
+
+                  $(document).click(function(event) {
+                    if (!$(event.target).closest(".share").length) {
+                      $(".share-modal").hide();
+                    }
+                  });
+                  
+
+                  
+                  // Ẩn hiện Header khi Responsive
+                  $(".show-header").click(function(){
+                    $(".modal-nav").show();
+                  })
+
+
+                  $(".modal-nav-close").click(function() {
+                    var modalnav = $(this).closest(".modal-nav");
+                    modalnav.hide();
+                  });
+
+                  $(".modal-nav").click(function(e) {
+                    if (e.target === this) {
+                      $(this).hide();
+                    }
+                  });
+
+                 
+
+
+
+                  $("#search-btn").click(function() {
+                    var keyword = $("#search-input").val();
+                    
+                    if (keyword) {
+                      var content = $(".content");
+                      var regex = new RegExp(keyword, "gi");
+                      var matches = content.text().match(regex);
+                      
+                      if (matches) {
+                        var firstMatch = matches[0];
+                        var position = content.text().indexOf(firstMatch);
                         
-                        $(".share-modal").not($dropdown).hide();
-                        
-                        $dropdown.toggle();
-                      });
+                        $('html, body').animate({
+                          scrollTop: content.offset().top + position
+                        }, 500);
+                      }
+                    }
+                  });
+
+                  
                       
                   
-                      $(document).click(function(event) {
-                        var $target = $(event.target);
+                      
+
+
                   
-                        // Ẩn dropdown khi người dùng click chuột ra ngoài dropdown hoặc .elip
-                        if (!$target.closest(".share, .share-modal").length) {
-                          $(".share-modal").hide();
-                        }
-                      });
 
+                    
 
-
+        
 
                     
    
