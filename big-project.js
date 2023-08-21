@@ -114,7 +114,7 @@ function loadBlogs() {
 
 
 
-              // START CLOSE ẨN ACCOUNT
+              // ẨN ACCOUNT
               $(".acc-close, .hidefl-acc").click(function() {
                 var $account = $(this).closest(".account");
             
@@ -380,40 +380,30 @@ $(document).ready(() => {
                     }
                   });
 
-                 
 
 
 
-                  $("#search-btn").click(function() {
-                    var keyword = $("#search-input").val();
-                    
-                    if (keyword) {
-                      var content = $(".content");
-                      var regex = new RegExp(keyword, "gi");
-                      var matches = content.text().match(regex);
-                      
-                      if (matches) {
-                        var firstMatch = matches[0];
-                        var position = content.text().indexOf(firstMatch);
+                  // Search bài viết
+                  $("#search-input").on("keyup", function(event) {
+                    if (event.which === 13) { // Enter key
+                      var keyword = $(this).val().toLowerCase();
+                
+                      $(".content").each(function() {
+                        var contentText = $(this).text().toLowerCase();
                         
-                        $('html, body').animate({
-                          scrollTop: content.offset().top + position
-                        }, 500);
-                      }
+                        // Kiểm tra từ khóa có nằm trong bài viết không
+                        if (contentText.indexOf(keyword) !== -1) {
+                          var scrollTop = $(this).offset().top - $(window).height() / 7;
+                          $("html, body").animate({ scrollTop: scrollTop }, 1000);
+                          return false; // Dừng vòng lặp sau khi tìm thấy bài viết
+                        }
+                      });
                     }
                   });
 
-                  
-                      
-                  
-                      
 
 
-                  
 
-                    
-
-        
 
                     
    
