@@ -11,23 +11,24 @@
     .fa-phone-volume {
         margin-left: 110px;
     }
+
+    .search-friends {
+        margin-left: 190px;
+    }
+
+    .infor-user {
+        left: -5.188rem;
+    }
 }
 
 @media (max-width: 1100px) {
     #header .subheader .lefthd .search {
-        width: 45px;
-    }
-
-    #header .subheader .lefthd input {
-        display: none;
+        width: 200px;
     }
     
     #sidebar {
         display: none;
     }
-
-
-
 }
 
 @media (max-width: 1100px) and (min-width: 700px) {
@@ -66,10 +67,17 @@
     .elip .elip-modal {
         left: -210px;
     }
-     
 }
 
 @media (max-width: 699px) {
+    .infor-user {
+        left: -0.188rem;
+    }
+
+    .show-nav {
+        display: block;
+    }
+
      .righthd {
         display: none;
     }
@@ -87,19 +95,6 @@
     .modal-nav.open {
         display: flex;
     }
-
-    /* .righthd {
-        display: flex;
-        flex-direction: column;
-        margin-top: 250px;
-        z-index: 999;
-        justify-content: center;
-    }
-
-    .righthd > a > div{
-        width: 200px;
-        background: white;
-    } */
 
     .img {
         left: 5px;
@@ -153,13 +148,20 @@
     #containers #contents .content article button {
         margin-top: 0;
     }
-
-    
 }
 
 @media (max-width: 470px) {
+    #containers #contents .content > header {
+        min-height: 50px;
+    }
+
     .flex-col {
         margin-top: 8px;
+    }
+
+    .img {
+        width: 46px;
+        height: 46px;
     }
 
     .img-content {
@@ -183,8 +185,6 @@
         height: 90px;
     }
 
-    
-
     .modal-footer {
         justify-content: end;
     }
@@ -193,7 +193,6 @@
         margin: 0;
     }
     
-
     #containers .tabs .tab-item {
         padding: 16px 6px 11px 6px;
         font-size: 17px;
@@ -201,11 +200,76 @@
 
     #containers #contents .content {
         width: 355px;
-        height: 530px;
+        height: 515px;
     }
 
     #containers #contents .content footer ul li {
         margin: 10px 10px;
+    }
+
+    .content footer .share-modal {
+        right: 1.688rem;
+    }
+
+    .modal-content-container {
+        width: 21.87rem;
+        margin: 74px auto;
+    }
+    .img-modal-content-main {
+        width: 350px;
+        height: 300px;
+    }
+
+    .modal-content-body .flex i {
+        font-size: 17px;
+    }
+
+    .modal-content-input {
+        width: 210px;
+    }
+
+    .modal-content-input::placeholder {
+        font-size: 17px;
+    }
+
+    .modal-content-header {
+        padding-left: 60px;
+    }
+
+    .modal-content-footer div {
+        margin-right: 3px;
+    }
+
+    .content footer .share-modal {
+        width: 18.625rem;
+        height: 17.29rem;
+    }
+
+    .content footer .share-modal > footer {
+        padding: 4px 0;
+    }
+
+    .content footer .share-modal > footer > div > i {
+        font-size: 18px;
+    }
+
+    .content footer .share-modal > article > div > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .content footer .share-modal .header-share {
+        margin: 10px 10px 0 10px;
+    }
+
+    .elip .elip-modal {
+        left: -11rem;
+        height: 20.35rem;
+        width: 13.625rem;
+    }
+
+    .elip .elip-modal > div {
+        padding: 8px 0;
     }
 }
 

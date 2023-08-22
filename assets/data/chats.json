@@ -90,8 +90,56 @@
     "id": 12,
     "image": "rhyder.jpg",
     "name": "Quang Anh",
-    "chat1": "Thứ 7 tuần này nhớ coi Rap Việt nha bây",
-    "chat2": "Tới bảng của m rồi hả",
-    "chat3": "Đúng rồi, coi cổ vũ bạn bè nha m",
-    "chat4": "Biết rồi che"
+    "chat1": "Thứ 7 tuần này coi Rap Việt nha",
+    "chat2": "Nhớ rồi bạn",
+    "chat3": "Kêu bạn bè ủng hộ nữa nha",
+    "chat4": "Biết rồi biết rồi -.-"
+}, {
+    "id": 13,
+    "image": "viethuong.jpg",
+    "name": "Việt Hương",
+    "chat1": "Đầu tuần ghé tiệm cô lấy bánh nha",
+    "chat2": "Dạ con nhớ rồi cô",
+    "chat3": "Ok, cô cảm ơn con",
+    "chat4": "Dạ không có chi nha cô"
+}, {
+    "id": 14,
+    "image": "noo.jpg",
+    "name": "Noo Phước Thịnh",
+    "chat1": "Tuần này rảnh đi hát với anh",
+    "chat2": "Địa điểm ở đâu anh",
+    "chat3": "Vài hôm anh nhắn lại nha",
+    "chat4": "Dạ oke anh"
+}, {
+    "id": 15,
+    "image": "xuanbac.jpg",
+    "name": "Xuân Bắc",
+    "chat1": "Cháu coi thách thức danh hài chưa",
+    "chat2": "Dạ chưa",
+    "chat3": "Tập mới hay, nhớ coi nha",
+    "chat4": "Dạ dạ"
+}, {
+    "id": 16,
+    "image": "ngothanhvan.jpg",
+    "name": "Ngô Thanh Vân",
+    "chat1": "Thứ 3 nhớ coi tập mới cô diễn",
+    "chat2": "Dạ con biết rồi cô",
+    "chat3": "Rủ bạn bè coi chung nha",
+    "chat4": "Dạ dạ"
+}, {
+    "id": 17,
+    "image": "kienhuy.jpg",
+    "name": "Ngô Kiến Huy",
+    "chat1": "Coi 2 ngày 1 đêm mùa 2 chưa",
+    "chat2": "Em coi rồi anh",
+    "chat3": "Diễn xuất sao em??",
+    "chat4": "Tuyệt vời nha anh"
+}, {
+    "id": 18,
+    "image": "anhtu.jpg",
+    "name": "Anh Tú",
+    "chat1": "Hôm bữa có dự cưới anh không",
+    "chat2": "Em có đi mà anh",
+    "chat3": "Oke em, tưởng em không đi",
+    "chat4": "Có đi mà anh"
 }]

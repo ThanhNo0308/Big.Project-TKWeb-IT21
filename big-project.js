@@ -87,8 +87,7 @@ function loadChats() {
               $(this).parent().parent().parent().hide();
             })
           })
-})
-
+  })
 }
 
 function loadBlogs() {
@@ -112,8 +111,6 @@ function loadBlogs() {
     let c = document.querySelector('.accounts');
     c.innerHTML = a;
 
-
-
               // ẨN ACCOUNT
               $(".acc-close, .hidefl-acc").click(function() {
                 var $account = $(this).closest(".account");
@@ -121,7 +118,6 @@ function loadBlogs() {
                 // Ẩn mờ và ẩn phần tử .account trong vòng 0.5 giây
                 $account.fadeOut(800);
               });
-
   })
 }
 
@@ -225,10 +221,6 @@ window.onload = function() {
         pane.classList.add('active')
       }
     })
-
-
-
-
 }
 
 
@@ -323,83 +315,117 @@ $(document).ready(() => {
     }
 
 
-                  // Hiển thị Modal-Reblog
-                  $(".js-show-modal-content").click(function() {
-                    var modal = $(this).closest(".content").find(".js-modal-content");
-                    modal.show();
-                  });
+
+    // Hiển thị Modal-Reblog
+    $(".js-show-modal-content").click(function() {
+      var modal = $(this).closest(".content").find(".js-modal-content");
+      modal.show();
+    });
+    
+    $(".js-modal-content-close").click(function() {
+      var modal = $(this).closest(".js-modal-content");
+      modal.hide();
+    });
+
+    $(".js-modal-content").click(function(e) {
+      if (e.target === this) {
+        $(this).hide();
+      }
+    });
+
+
+
+    // Ẩn và hiện Share
+    $(".share").click(function() {
+      var $elip = $(this);
+      var $dropdown = $elip.find(".share-modal");
+      
+      $(".share-modal").not($dropdown).hide();
+      
+      $dropdown.toggle();
+    });
+
+    $(".share-modal").click(function(event) {
+      event.stopPropagation();
+    });
+
+    $(document).click(function(event) {
+      if (!$(event.target).closest(".share").length) {
+        $(".share-modal").hide();
+      }
+    });
+    
+
+    
+    // Ẩn hiện Header khi Responsive
+    $(".show-header").click(function(){
+      $(".modal-nav").show();
+    })
+
+    $(".modal-nav-close").click(function() {
+      var modalnav = $(this).closest(".modal-nav");
+      modalnav.hide();
+    });
+
+    $(".modal-nav").click(function(e) {
+      if (e.target === this) {
+        $(this).hide();
+      }
+    });
+
+
+
+    //Ẩn và hiện elip-friends
+    $(".show-elip-fr").click(function(e) {
+      e.stopPropagation();
+      $(".elip-friends").show();
+    });
+    
+    $(document).click(function(e) {
+      if (!$(e.target).closest(".elip-friends").length) {
+        $(".elip-friends").hide();
+      }
+    });
+
+
+
+    // Search bạn bè
+    $(".search-fr").on("input", function() {
+      var searchTerm = $(this).val().toLowerCase();
+      
+      $("#friends .friend").each(function() {
+        var friendName = $(this).text().toLowerCase();
+        
+        if (friendName.includes(searchTerm)) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      });
+    });
+
+
+
+    // Search bài viết
+    $("#search-input").on("keyup", function(event) {
+      if (event.which === 13) { // Enter key
+        var keyword = $(this).val().toLowerCase();
+  
+        $(".content").each(function() {
+          var contentText = $(this).text().toLowerCase();
+          
+          // Kiểm tra từ khóa có nằm trong bài viết không
+          if (contentText.indexOf(keyword) !== -1) {
+            var scrollTop = $(this).offset().top - $(window).height() / 7;
+            $("html, body").animate({ scrollTop: scrollTop }, 1000);
+            return false; // Dừng vòng lặp sau khi tìm thấy bài viết
+          }
+        });
+      }
+    });
+
+
                   
-                  $(".js-modal-content-close").click(function() {
-                    var modal = $(this).closest(".js-modal-content");
-                    modal.hide();
-                  });
-
-                  $(".js-modal-content").click(function(e) {
-                    if (e.target === this) {
-                      $(this).hide();
-                    }
-                  });
-
-
-                  // Ẩn và hiện Share
-                  $(".share").click(function() {
-                    var $elip = $(this);
-                    var $dropdown = $elip.find(".share-modal");
-                    
-                    $(".share-modal").not($dropdown).hide();
-                    
-                    $dropdown.toggle();
-                  });
-
-                  $(".share-modal").click(function(event) {
-                    event.stopPropagation();
-                  });
-
-                  $(document).click(function(event) {
-                    if (!$(event.target).closest(".share").length) {
-                      $(".share-modal").hide();
-                    }
-                  });
-                  
-
-                  
-                  // Ẩn hiện Header khi Responsive
-                  $(".show-header").click(function(){
-                    $(".modal-nav").show();
-                  })
-
-
-                  $(".modal-nav-close").click(function() {
-                    var modalnav = $(this).closest(".modal-nav");
-                    modalnav.hide();
-                  });
-
-                  $(".modal-nav").click(function(e) {
-                    if (e.target === this) {
-                      $(this).hide();
-                    }
-                  });
-
-
-
-
-                  // Search bài viết
-                  $("#search-input").on("keyup", function(event) {
-                    if (event.which === 13) { // Enter key
-                      var keyword = $(this).val().toLowerCase();
-                
-                      $(".content").each(function() {
-                        var contentText = $(this).text().toLowerCase();
-                        
-                        // Kiểm tra từ khóa có nằm trong bài viết không
-                        if (contentText.indexOf(keyword) !== -1) {
-                          var scrollTop = $(this).offset().top - $(window).height() / 7;
-                          $("html, body").animate({ scrollTop: scrollTop }, 1000);
-                          return false; // Dừng vòng lặp sau khi tìm thấy bài viết
-                        }
-                      });
-                    }
-                  });
 
 
 

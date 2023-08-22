@@ -53,4 +53,19 @@
     "name": "Tom Cruise",
     "style": "",
     "home": "New York, US"
+}, {
+    "img": "taylor.png",
+    "name": "Taylor Swift",
+    "style": "",
+    "home": "Pennsylvania, US"
+}, {
+    "img": "justin.jpg",
+    "name": "Justin Bieber",
+    "style": "",
+    "home": "Ontario, Canada"
+}, {
+    "img": "james.jpg",
+    "name": "LeBron James",
+    "style": "",
+    "home": "Akron, Ohio"
 }]

@@ -46,4 +46,28 @@
     "id": 12,
     "image": "rhyder.jpg",
     "name": "Quang Anh"
+}, {
+    "id": 13,
+    "image": "viethuong.jpg",
+    "name": "Việt Hương"
+}, {
+    "id": 14,
+    "image": "noo.jpg",
+    "name": "Noo Phước Thịnh"
+}, {
+    "id": 15,
+    "image": "xuanbac.jpg",
+    "name": "Xuân Bắc"
+}, {
+    "id": 16,
+    "image": "ngothanhvan.jpg",
+    "name": "Ngô Thanh Vân"
+}, {
+    "id": 17,
+    "image": "kienhuy.jpg",
+    "name": "Ngô Kiến Huy"
+}, {
+    "id": 18,
+    "image": "anhtu.jpg",
+    "name": "Anh Tú"
 }]
