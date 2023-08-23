@@ -13,6 +13,38 @@ function loadFriends() {
   })
 }
 
+
+function loadBlogs() {
+  fetch("assets/data/blogs.json").then(res => res.json()).then(data => {
+    let a = "";
+    for (let b of data)
+      a += `
+          <div class="account flex">
+            <img class="img-account" src="assets/img/${b.img}" alt="hieupc">
+            <div class="infor">
+              <div>
+                <b>${b.name}</b>
+                <i style="color: #00b8ff;" class="fa-solid fa-circle-check"></i>
+              </div>
+              <div style="color: #99a3ae;">${b.home}</div>
+            </div>
+            <div class="acc-fl hidefl hidefl-acc">Follow</div>
+            <div class="acc-close"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+      `
+    let c = document.querySelector('.accounts');
+    c.innerHTML = a;
+
+              // ẨN ACCOUNT
+              $(".acc-close, .hidefl-acc").click(function() {
+                var $account = $(this).closest(".account");
+            
+                $account.fadeOut(800);
+              });
+  })
+}
+
+
 function loadChats() {
   fetch("assets/data/chats.json").then(res => res.json()).then(data => {
     let g = "";
@@ -89,38 +121,6 @@ function loadChats() {
           })
   })
 }
-
-function loadBlogs() {
-  fetch("assets/data/blogs.json").then(res => res.json()).then(data => {
-    let a = "";
-    for (let b of data)
-      a += `
-          <div class="account flex">
-            <img class="img-account" src="assets/img/${b.img}" alt="hieupc">
-            <div class="infor">
-              <div>
-                <b>${b.name}</b>
-                <i style="color: #00b8ff;" class="fa-solid fa-circle-check"></i>
-              </div>
-              <div style="color: #99a3ae;">${b.home}</div>
-            </div>
-            <div class="acc-fl hidefl hidefl-acc">Follow</div>
-            <div class="acc-close"><i class="fa-solid fa-xmark"></i></div>
-          </div>
-      `
-    let c = document.querySelector('.accounts');
-    c.innerHTML = a;
-
-              // ẨN ACCOUNT
-              $(".acc-close, .hidefl-acc").click(function() {
-                var $account = $(this).closest(".account");
-            
-                $account.fadeOut(800);
-              });
-  })
-}
-
-
 
 
 
@@ -406,12 +406,6 @@ $(document).ready(() => {
         $(this).hide();
       }
     });
-
-
-
-
-                    
-   
 
 })
 
