@@ -115,7 +115,6 @@ function loadBlogs() {
               $(".acc-close, .hidefl-acc").click(function() {
                 var $account = $(this).closest(".account");
             
-                // Ẩn mờ và ẩn phần tử .account trong vòng 0.5 giây
                 $account.fadeOut(800);
               });
   })
@@ -138,22 +137,18 @@ window.onload = function() {
     const modalClose = document.querySelector('.js-modal-close')
 
 
-    // Ham hien thi modal (them class open vao modal)
     function showModals() {
       modal.classList.add('open')
     }
 
-    //Ham an modal (go bo class open cua modal)
     function hideModals() {
       modal.classList.remove('open')
     }
 
-    //Lap qua tung the button va nghe hanh vi click
     for(const Btn of Btns) {
       Btn.addEventListener('click', showModals)
     }
 
-    //Nghe hanh vi click vao button close
     modalClose.addEventListener('click', hideModals)
 
     modal.addEventListener('click', hideModals)
@@ -170,24 +165,19 @@ window.onload = function() {
     const modalpenContainer = document.querySelector('.js-modal-pen-container')
     const modalpen = document.querySelector('.js-modal-pen')
         
-    // Hien Modal
     function showModalPens() {
       modalpen.classList.add('open')
     }
         
-    // An Modal
     function hideModalPens() {
       modalpen.classList.remove('open')
     }
         
     pen.addEventListener('click', showModalPens)
         
-    // Hien Modal-Nav
     modalpenContainer.addEventListener('click', showModals)
         
     modalpen.addEventListener('click', hideModalPens)
-        
-
 
         
         
@@ -204,7 +194,6 @@ window.onload = function() {
     line.style.left = tabActive.offsetLeft + 'px'
     line.style.width = tabActive.offsetWidth + 'px'
         
-        
     tabs.forEach((tab, index) => {
       const pane = panes[index]
 
@@ -212,10 +201,8 @@ window.onload = function() {
         $('.tab-item.active').classList.remove('active')
         $('.tab-pane.active').classList.remove('active')
             
-            
         line.style.left = this.offsetLeft + 'px'
         line.style.width = this.offsetWidth + 'px'
-            
             
         this.classList.add('active')
         pane.classList.add('active')
@@ -228,39 +215,6 @@ window.onload = function() {
 
 
 $(document).ready(() => {
-    $(".fl").click(function() {
-      $(this).hide();
-    })
-
-                   // Thả tim
-    $(".fa-heart-pulse").click(function() {
-      $(this).toggleClass('heart');
-    })
-
-
-                  // Ẩn và hiện elip
-    $(".elip").click(function() {
-      var $elip = $(this);
-      var $dropdown = $elip.find(".elip-modal");
-
-      // Ẩn tất cả các dropdown trừ dropdown liền kề của phần tử .elip đã được click
-      $(".elip-modal").not($dropdown).hide();
-
-      // Hiển thị hoặc ẩn dropdown liền kề của phần tử .elip đã được click
-      $dropdown.toggle();
-    });
-
-    $(document).click(function(event) {
-      var $target = $(event.target);
-
-      // Ẩn dropdown khi người dùng click chuột ra ngoài dropdown hoặc .elip
-      if (!$target.closest(".elip, .elip-modal").length) {
-        $(".elip-modal").hide();
-      }
-    });
-
-
-
                 // Ẩn và hiển thị Dropdown-Header
     $('.fa-store').click(function() {
       toggleDropdown('.dropdown-store-content', '.fa-store');
@@ -314,6 +268,35 @@ $(document).ready(() => {
       $('.fa-pencil').css('color', '#001935');
     }
 
+                   // Ẩn follow
+    $(".fl").click(function() {
+      $(this).hide();
+    })
+
+                   // Thả tim
+    $(".fa-heart-pulse").click(function() {
+      $(this).toggleClass('heart');
+    })
+
+
+                  // Ẩn và hiện elip
+    $(".elip").click(function() {
+      var $elip = $(this);
+      var $dropdown = $elip.find(".elip-modal");
+
+      $(".elip-modal").not($dropdown).hide();
+
+      $dropdown.toggle();
+    });
+
+    $(document).click(function(event) {
+      var $target = $(event.target);
+
+      if (!$target.closest(".elip, .elip-modal").length) {
+        $(".elip-modal").hide();
+      }
+    });
+
 
 
     // Hiển thị Modal-Reblog
@@ -355,22 +338,41 @@ $(document).ready(() => {
       }
     });
     
-
     
-    // Ẩn hiện Header khi Responsive
-    $(".show-header").click(function(){
-      $(".modal-nav").show();
-    })
 
-    $(".modal-nav-close").click(function() {
-      var modalnav = $(this).closest(".modal-nav");
-      modalnav.hide();
-    });
-
-    $(".modal-nav").click(function(e) {
-      if (e.target === this) {
-        $(this).hide();
+    // Search bài viết
+    $("#search-input").on("keyup", function(event) {
+      if (event.which === 13) { 
+        var keyword = $(this).val().toLowerCase();
+  
+        $(".content").each(function() {
+          var contentText = $(this).text().toLowerCase();
+          
+          // Kiểm tra từ khóa có nằm trong bài viết không
+          if (contentText.indexOf(keyword) !== -1) {
+            var scrollTop = $(this).offset().top - $(window).height() / 7;
+            $("html, body").animate({ scrollTop: scrollTop }, 1000);
+            return false; // Dừng vòng lặp sau khi tìm thấy bài viết
+          }
+        });
       }
+    });
+    
+    
+    
+    // Search bạn bè
+    $(".search-fr").on("input", function() {
+      var searchTerm = $(this).val().toLowerCase();
+      
+      $("#friends .friend").each(function() {
+        var friendName = $(this).text().toLowerCase();
+        
+        if (friendName.includes(searchTerm)) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      });
     });
 
 
@@ -389,44 +391,21 @@ $(document).ready(() => {
 
 
 
-    // Search bạn bè
-    $(".search-fr").on("input", function() {
-      var searchTerm = $(this).val().toLowerCase();
-      
-      $("#friends .friend").each(function() {
-        var friendName = $(this).text().toLowerCase();
-        
-        if (friendName.includes(searchTerm)) {
-          $(this).show();
-        } else {
-          $(this).hide();
-        }
-      });
+    // Ẩn hiện Header khi Responsive
+    $(".show-header").click(function(){
+      $(".modal-nav").show();
+    })
+
+    $(".modal-nav-close").click(function() {
+      var modalnav = $(this).closest(".modal-nav");
+      modalnav.hide();
     });
 
-
-
-    // Search bài viết
-    $("#search-input").on("keyup", function(event) {
-      if (event.which === 13) { // Enter key
-        var keyword = $(this).val().toLowerCase();
-  
-        $(".content").each(function() {
-          var contentText = $(this).text().toLowerCase();
-          
-          // Kiểm tra từ khóa có nằm trong bài viết không
-          if (contentText.indexOf(keyword) !== -1) {
-            var scrollTop = $(this).offset().top - $(window).height() / 7;
-            $("html, body").animate({ scrollTop: scrollTop }, 1000);
-            return false; // Dừng vòng lặp sau khi tìm thấy bài viết
-          }
-        });
+    $(".modal-nav").click(function(e) {
+      if (e.target === this) {
+        $(this).hide();
       }
     });
-
-
-                  
-
 
 
 

@@ -70,6 +70,62 @@
 }
 
 @media (max-width: 699px) {
+    .content footer .share-modal {
+        bottom: -19.875rem;
+        right: 10.688rem;
+    }
+
+    .img-modal-content-main {
+        width: 488px;
+        height: 290px;
+    }
+
+    .modal-content-header {
+        padding-left: 80px;
+        height: 66px;
+    }
+
+    .modal-content-input {
+        width: 65%;
+    }
+
+    .modal-content-body .flex i {
+        padding-left: 8px;
+    }
+
+    .modal-content-container {
+        width: 30.5rem;
+    }
+    .modal-container {
+        width: 30.5rem;
+    }
+
+    .modal-body .flex i {
+        font-size: 20px;
+        padding-left: 3px;
+    }
+
+    .elip .elip-modal {
+        left: -13.25rem;
+    }
+
+    #containers #nav ul li button {
+        margin: 0 12px;
+    }
+
+    #containers #nav ul li i {
+        font-size: 35px;
+    }
+
+    #containers #nav {
+        width: 31.25rem;
+        min-height: 5.875rem;
+    }
+
+    .img-user {
+        display: none;
+    }
+
     .infor-user {
         left: -0.188rem;
     }
@@ -128,10 +184,6 @@
         margin: 0;
     }
 
-    #containers #nav {
-        display: none;
-    }
-
     #containers .tabs .tab-item {
         font-size: 19px;
     }
@@ -151,6 +203,55 @@
 }
 
 @media (max-width: 470px) {
+    #containers #contents .content header .name {
+        margin-left: 60px;
+    }
+    
+    .infor-img-user {
+        top: 4.3rem;
+        left: 5.563rem;
+    }
+
+    .cover-img-user {
+        width: 15.5rem;
+        height: 7.375rem;
+    }
+
+    .infor-user {
+        left: 0.812rem;
+        width: 15.5rem;
+        height: 10.75rem;
+        top: 53px;
+    }
+
+    .infor-user .header-user {
+        width: 14.25rem;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    .width-250px {
+        width: 180px;
+    }
+    .fonts-18px {
+        font-size: 14px;
+    }
+
+    #containers #nav ul li button {
+        margin: 0 8px;
+    }
+    
+    #containers #nav ul li i {
+        font-size: 30px;
+    }
+
+    #containers #nav {
+        width: 22.25rem;
+        min-height: 4.875rem;
+    }
+
     #containers #contents .content > header {
         min-height: 50px;
     }
@@ -182,7 +283,7 @@
     }
 
     .modal-input {
-        height: 90px;
+        height: 80px;
     }
 
     .modal-footer {
@@ -205,10 +306,6 @@
 
     #containers #contents .content footer ul li {
         margin: 10px 10px;
-    }
-
-    .content footer .share-modal {
-        right: 1.688rem;
     }
 
     .modal-content-container {
@@ -243,6 +340,8 @@
     .content footer .share-modal {
         width: 18.625rem;
         height: 17.29rem;
+        right: 2.688rem;
+        bottom: -260px;
     }
 
     .content footer .share-modal > footer {
